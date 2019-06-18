@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>MDignum</title>
+  <meta name="description"
+    content="MDignum is Ethereum-based platform monetizing medical devices and services, while building health-focused community.">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="msapplication-config" content="browserconfig.xml" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link href="favicons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:600|Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+  <header class="headroom">
+    <div class="container-fluid">
+      <div class="row justify-content-around align-items-center">
+        <div class="logo">
+          <a href="/"><img src="./images/logo-top.svg" alt="Medtech Logo"></a>
+        </div>
+        <ul class="main-nav">
+          <li>
+            <a href="#platform">Platform</a>
+          </li>
+          <li>
+            <a href="#devices">Devices</a>
+          </li>
+          <li>
+            <a href="#products">Pilot Projects</a>
+          </li>
+          <li>
+            <a href="#roadmap">Roadmap</a>
+          </li>
+          <li>
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li>
+            <a href="#team">Team</a>
+          </li>
+        </ul>
+        <a class="light-paper top" href="files/25-04-2019-blockchain.pdf" target="_blank" rel="noopener">White paper</a>
+        <!-- <button class="button top-presale =">Buy mEDG tokens</button> -->
+        <div class="button--hamburger">
+          <div class="hamburger top-mobile-nav">
+            <button class="button black hamburger__button js-menu__toggle">
+              <span class="hamburger__label">Open menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <nav class="menu-mobile">
+    <ul class="list menu__list">
+      <li class="menu__group">
+        <a href="#platform" class="link menu__link">Platform</a>
+      </li>
+      <li class="menu__group">
+        <a href="#products" class="link menu__link">Devices</a>
+      </li>
+      <li class="menu__group">
+        <a href="#pilot-project" class="link menu__link">Pilot Projects</a>
+      </li>
+      <li class="menu__group">
+        <a href="#roadmap" class="link menu__link">Roadmap</a>
+      </li>
+      <li class="menu__group">
+        <a href="#benefits" class="link menu__link">Benefits</a>
+      </li>
+      <li class="menu__group">
+        <a href="#team" class="link menu__link">Team</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="modal">
+    <div class="modal-container" id="modal-01">
+      <button class="close"></button>
+      <div class="modal-top">
+        <div class="logo">
+          <img src="./images/md-blockchain-horiz.svg" alt="alt">
+        </div>
+        <p class="accent">Note! To receive MDT tokens you should have a Ethereum Wallet</p>
+        <p class="big">Do not send ETH directly from any cryptocurrency exchanges. You need a token compatible ethereum
+          wallet.</p>
+        <p class="message">The following wallets are known to be compatible with Ethereum tokens (ERC-20 standard):</p>
+        <ul class="wallets">
+          <li>
+            <a href="https://www.myetherwallet.com/" target="_blank" rel="noopener">
+              <p>MyEtherWallet </p><span>&nbsp; (no download needed)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://parity.io/parity.html" target="_blank" rel="noopener">
+              <p>Parity + Ledger </p><span>&nbsp; (Hardware wallet)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://metamask.io/" target="_blank" rel="noopener">
+              <p>MetaMask </p><span>&nbsp; (Firefox and Chrome browser addon)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://itunes.apple.com/us/app/imtoken/id1153230571?mt=8" target="_blank" rel="noopener">
+              <p>imToken </p><span>&nbsp; (iPhone)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ethereum/mist" target="_blank" rel="noopener">
+              <p>Mist </p><span>&nbsp; (Desktop)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://parity.io/parity.html" target="_blank" rel="noopener">
+              <p>Parity </p><span>&nbsp; (Desktop)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=org.consenlabs.token&amp;hl=en" target="_blank"
+              rel="noopener">
+              <p>imToken </p><span>&nbsp; (Android)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-bottom">
+        <div class="form-check">
+          <div class="check-compatible check">
+            <div class="checkbox">
+              <input id="compatible" type="checkbox">
+              <label for="compatible"></label>
+            </div>My wallet is compatible
+          </div>
+          <div class="check-agreement check">
+            <div class="checkbox">
+              <input id="agreed" type="checkbox">
+              <label for="agreed"></label>
+            </div>I agree with &nbsp;<a href="files/mdblockchain-terms-and-conditions-20190430.pdf" target="_blank"
+              rel="noopener">terms&amp;conditions </a>&nbsp; and &nbsp;<a href="files/mdblockchain-privacy-policy-20190430.pdf"
+              target="_blank" rel="noopener">privacy policy</a>
+          </div>
+        </div>
+        <button class="proceed disabled" disabled id="next">Next</button>
+      </div>
+    </div>
+    <div class="modal-container" id="modal-02">
+      <div class="modal-container">
+        <button class="close"></button>
+        <div class="modal-top">
+          <div class="logo"><img src="./images/md-blockchain-horiz.svg" alt="alt"></div>
+          <p class="send-message">Send ETH to address:</p>
+          <div class="address">0x02d3aea48b443a0026ed9cbc91b97d7335aba323</div>
+          <p class="price">Current price: 1 ETH = 1600 MDBC</p>
+        </div>
+        <div class="modal-bottom">
+          <p class="timing">MBG tokens will be available in your wallet within 1 - 90 mins</p>
+          <button class="proceed" id="done">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="signup-modal">
+    <div class="modal-container">
+      <button class="close"></button>
+      <div class="modal-top">
+        <div class="logo"><img src="./images/md-blockchain-horiz.svg" alt="alt"></div>
+        <div class="section-title"><span>updates</span>
+          <h2>Keep me updated</h2>
+          <p>Stay up to date with the latest Matchpool news, developments, offers, roadmap additions, team updates,
+            investment and crowdfunding campaign.</p>
+        </div>
+        <div class="signup">
+          <input type="email" placeholder="Your E-mail">
+          <button>join</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Welcome-Screen -->
+
+  <section class="welcome-screen">
+    <!-- <div id="particles-js"></div> -->
+    <div class="container-fluid">
+      <div class="welcome-header">
+        <div class="logo"><a href="/"><img src="./images/main-logo-white.svg" alt="Medtech Logo"></a></div>
+        <ul class="main-nav">
+          <li><a class="main-nav-item" href="#platform">Platform</a></li>
+          <li><a class="main-nav-item" href="#devices">Devices</a></li>
+          <li><a class="main-nav-item" href="#products">Pilot Projects</a></li>
+          <li><a class="main-nav-item" href="#roadmap">Roadmap</a></li>
+          <li><a class="main-nav-item" href="#benefits">Benefits</a></li>
+          <li><a class="main-nav-item" href="#team">Team</a></li>
+        </ul>
+        <div class="selector-lang">
+          <ul class="lang-nav">
+            <li><a class="main-nav-item active" href="#">ENG</a></li>
+            <li><a class="main-nav-item" href="#">中文</a></li>
+          </ul>
+        </div>
+        <div class="button--hamburger">
+          <div class="hamburger top-mobile-nav">
+            <button class="button hamburger__button js-menu__toggle">
+              <span class="hamburger__label">Open menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="welcome-presale" id="mdignum">
+        <!-- <div class="container"> -->
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-6 align-self-center">
+            <div class="welcome-message-presale">
+              <h1 class="welcome-presale-title">MDignum </h1>
+              <p class="welcome-preslale-subtitle">Digital Transformation Platform <br>
+                for Medical Devices</p>
+              <p class="welcome-preslale-description">MDignum brings together fintech, blockchain, and IoT best
+                practices to
+                transform every innovative medical device into a digital one, providing integrated platform for
+                implementing
+                new business models in the healthcare industry, such as MDaaS – Medical Device as a Service
+              </p>
+              <div class="row welcome-presale-buttons">
+                <div class="col-md-6 col-sm-12">
+                  <a class="light-paper" href="files/25-04-2019-blockchain.pdf" target="_blank" rel="noopener">White
+                    paper</a>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <a href="#" class="white-btn">白皮書</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6 align-self-center">
+            <img class="welcome-preale-img" src="images/welcome-presale-new-svg.svg" alt="">
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <!-- <div class="hero-buttons">
+          <div class="row">
+            <div class="col-md-12">
+              <a class="light-paper" href="files/25-04-2019-blockchain.pdf" target="_blank" rel="noopener">White
+                paper</a>
+            </div>
+            <div class="col-md-12">
+              <button class="join-presale">Buy mEDG tokens</button>
+            </div>
+          </div>
+        </div> -->
+
+    </div>
+  </section>
+
+  <main>
+    <section class="section-top">
+      <div class="container">
+        <section class="healthcare" id="platform">
+          <div class="section-title">
+            <!-- <span>platform</span> -->
+            <h2>MDignum Platform</h2>
+            <p>MDignum is an ecosystem of solutions that enable healthcare organizations and providers to acquire
+              novel/new-generation treatment and diagnostic devices at no up-front cost. This is achieved by using a
+              Device-as-a-Service model, wherein device operators pay for use, rather than ownership. All devices in the
+              ecosystem thus become income streams for vendors/manufacturers, while sales of new/upgraded devices become
+              frictionless due to lack of risk for customers.
+            </p>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+              <!-- <img src="images/2.svg" alt=""> -->
+              <a href="images/ecosystem-big.png" data-lightbox="1-big"><img src="images/ecosystem.svg" alt=""></a>
+              <!-- <div class="grid-container">
+                <div class="box">
+                  <span>Device<br />Manufacturer</span>
+                </div>
+                <div class="box">
+                  <span>Regulator</span>
+                </div>
+                <div class="box">
+                  <span>MIS/EHR<br />Provider</span>
+                </div>
+                <div class="box">
+                  <span>Healtchcare<br />Provider</span>
+                </div>
+                <div class="box">
+                  <span>Medical Device</span>
+                </div>
+                <div class="box">
+                  <span>Insurance<br />Company</span>
+                </div>
+                <div class="box">
+                  <span>Doctor</span>
+                </div>
+                <div class="box">
+                  <img src="images/boxes.svg" alt="">
+                </div>
+                <div class="box">
+                  <span>Leasing<br />Company</span>
+                </div>
+                <div class="box">
+                  <span>Patient</span>
+                </div>
+                <div class="box">
+                  <span>Token<br />Holder</span>
+                </div>
+                <div class="box">
+                  <span>Charity<br />Fund</span>
+                </div>
+              </div> -->
+            </div>
+            <div class="healthcare-text col-lg-5 col-md-12" id="ecosystem">
+              <h2>ECOSYSTEM</h2>
+              <p>MDignum ecosystem includes all parties involved in medical device life cycle – from manufacturing
+                trough using for providing healthcare services till final utilization.</p>
+              <p>The platform maintains all kinds of relations between parties:</p>
+              <ul>
+                <li>Distributed multi-party purchase contracts</li>
+                <li>SLA monitoring and fulfilment</li>
+                <li>Medical device and spare part traceability</li>
+                <li>Compliance management</li>
+                <li>MRO contracts and procedures</li>
+                <li>etc.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-12">
+              <div class="healthcare-text">
+                <h2>Platform Architecture</h2>
+                <p>MDignum is a universal platform that will enable the step-by-step creation and development of a
+                  wide-reaching ecosystem of solutions that will encompass all aspects of medical device use in the
+                  healthcare and wellness industries.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="arch-image">
+                <!-- <img src="images/1.svg" alt=""> -->
+                <a href="images/platform-arch-big.png" data-lightbox="1-big"><img src="images/platform-arch.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center" id="devices">
+            <div class="devices-title">
+              <h2>Devices on the Platform</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-6 align-self-center">
+                <div class="arch-image">
+                    <!-- <img src="images/1.svg" alt=""> -->
+                    <a href="images/devices-on-the-platform-big.png" data-lightbox="1-big"><img src="images/devices-on-the-platform.svg" alt=""></a>
+                  </div>
+              <!-- <img src="images/devices-on-the-platform.svg" alt="" class="img-height"> -->
+            </div>
+            <div class="col-md-6">
+              <div class="devices-text">
+                <p class="devices-text-bold">
+                  A wide variety of medical devices are present on the market. Any of them can potentially be
+                  transformed into digitalized devices and connected to the MDignum platform.
+                </p>
+                <p class="devices-text-normal">
+                  • Qualification. At this stage, a pool of candidate devices is formed. One of the key qualifying
+                  criteria is innovation. Specifically, the device needs to perform promising diagnostic or treatment
+                  methods that have already been clinically proven, but have not yet been put into common practice.
+                  <br><br>
+                  • Creating the digital extension. A required engineering stage that involves adapting a standard
+                  digitalization module to a given device model. This may require modifying the device’s construction.
+                  <br><br>
+                  • Platform integration. This stage includes development of cloud services, smart contracts, protocols,
+                  and a mobile app — all of the software required to integrate devices with the platform. <br><br>
+                  • Launch of new business model. This stage includes a set of marketing and legal activities to support
+                  new digital business processes, such as devices sales for tokens or leasing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </section>
+
+    <section class="equipment" id="products">
+      <div class="equipment-top">
+        <div class="container">
+          <div class="section-title">
+            <h2>Pilot projects</h2>
+            <p>Before offering this new business solution to all medical device manufacturers, we will pilot it with
+              two devices from our partners. They have both been proven in clinical practice and have successfully sold
+              in various markets. We are sure that our platform will allow them to benefit a greater number of patients
+              all over the world.</p>
+          </div>
+          <div class="row">
+            <div class="equipment-description col-md-6">
+              <span id="plason">PLASON</span>
+              <h3>The device for <br> nitric oxide therapy</h3>
+              <ul class="list">
+                <li>Applied to wide range of pathologies
+                  <span>Wounds, diabetic foot, burns, trophic ulcers, etc.</span>
+                </li>
+                <li>Comfortable and painless for patients
+                  <span>Blowing by warm air enriched with nitric oxide</span>
+                </li>
+                <li>Clinically evaluated
+                  <span>10,000+ patients treated</span>
+                </li>
+                <li>Based on fundamental science
+                  <span>Nobel prize 1998</span>
+                </li>
+                <li>Generates nitric oxide from the air
+                  <span>No consumables</span>
+                </li>
+                <li>Approved for use in Europe
+                  <span class="whitespace"><img class="ce" src="../images/CE_Logo.svg" alt="alt"></span></li>
+              </ul><a class="device-pres" href="https://www.dropbox.com/s/bw7cgcqhpf1w3ic/Plason_2609_1.pdf?dl=0"
+                target="_blank" rel="noopener">Find out more</a>
+            </div>
+            <div class="equipment-image col-md-6 align-self-center">
+              <img src="./images/plason.png" alt="alt">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="equipment-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="left-section col-md-6">
+              <h4>The therapeutic effects <br> of Nitric Oxide <br> treatment</h4>
+              <ul class="list">
+                <li> Normalization of the microcirculation via vasodilation</li>
+                <li> Activation of antioxidant protection</li>
+                <li> Improving the neuronal conduction</li>
+                <li> Regulation of specific and non-specific immunity</li>
+                <li> Regulation of apoptosis and prevention of pathological scarring</li>
+              </ul>
+            </div>
+            <div class="right-section col-md-6">
+              <p>The main advantage of Nitric Oxide therapy unlike most physical and pharmacological factors influence
+                treatment is multifunctional Nitric Oxide to all phases of inflammatory-regenerative process, resulting
+                in
+                high efficiency treatment of various pathologies. </p>
+              <p>Nitric Oxide therapy also allows a direct, local influence on pathological bodies, thus avoiding side
+                effects, such as using nitropreparátov - medicated NO donors.</p>
+              <p>Another advantage of Nitric Oxide therapy is the ability of exogenous Nitric Oxide penetrate not only
+                through the surface of the wound, but also through intact skin and mucous membranes, ie the possibility
+                of
+                non-invasive effect on the deposits and deep neurovascular bundles.</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="equipment reverse">
+      <div class="equipment-top">
+        <div class="container">
+          <div class="row">
+            <div class="equipment-image col-md-6">
+              <img src="./images/diaton.png" alt="alt">
+            </div>
+            <div class="equipment-description col-md-6">
+              <span id="diaton">DIATON</span>
+              <h3>THE HANDY DEVICE FOR <br> GLAUCOMA SCREENING </h3>
+              <ul class="list">
+                <li> Convenient to use both for patients and doctors <span>No contact with the cornea - no risk of
+                    infection or scratching</span></li>
+                <li> Can be used by Primary Care Physicians <span>Early glaucoma diagnostic through mass
+                    screening</span>
+                </li>
+                <li> Equipped with Bluetooth and IOT sensors <span>Simplified integration with EMR systems and remote
+                    device diagnostic</span></li>
+                <li> Former model has FDA 510(k) approval and CE mark <span>Be easier get approval for new model</span>
+                </li>
+              </ul><a class="device-pres"
+                href="https://www.dropbox.com/s/5zne8iuc86l5tr9/Diaton%20Digital%20ICO.pdf?dl=0" target="_blank"
+                rel="noopener">Find out more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap white-bg" id="roadmap">
+      <div class="container">
+        <div class="section-title">
+          <h2>History & Roadmap</h2>
+        </div>
+        <div class="timeline-02">
+          <img src="./images/new-roadmap.svg" alt="alt">
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits grad-bg" id="benefits">
+      <div class="container">
+        <section>
+          <div class="section-title">
+            <h2>Benefits</h2>
+          </div>
+          <div class="row">
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="images/icons/ic_feature-1.svg" alt="alt">
+              </div>
+              <p>Bringing FinTech into Healthcare. We create and implement new business models based on blockchain and
+                tokenomics principles. This will streamline and clarify finance relations among whole healthcare
+                ecosystem. </p>
+            </div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="images/icons/ic_feature-2.svg" alt="alt">
+              </div>
+              <p>Social responsibility. We believe our projects such as early glaucoma screening (with Diaton) and
+                nitric oxide therapy for wounds healing (with Plason) improve quality of life for hundreds thousand
+                people. </p>
+            </div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="images/icons/ic_feature-3.svg" alt="alt">
+              </div>
+              <p>Holistic engineering approach. Many years of medical hardware design and production plus experience
+                in IoT and digital technologies is the key to success in making innovative devices.</p>
+            </div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="images/icons/ic_feature-4.svg" alt="alt">
+              </div>
+              <p>FDA/CE certification practice. We did it for previous models of our devices and understand how to
+                minimize bureaucratic burden on the way to U.S. and European customers.</p>
+            </div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="images/icons/ic_feature-5.svg" alt="alt">
+              </div>
+              <p>Strong software development skills. Our comprehensive portfolio includes apps for insurance, banking,
+                retail, and other. This cross-industries experience will be in demand for ecosystem integration.</p>
+            </div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="images/icons/ic_feature-6.svg" alt="alt">
+              </div>
+              <p>Focus on innovative products and solutions. It will help to reach great scalability and robust cash
+                flow.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="team white-bg" id="team">
+      <div class="container">
+        <div class="section-title">
+          <h2>Team</h2>
+          <p class="team-description">Extended experience of the core MDignum team in fintech and insurance, blockchain
+            technology, combined
+            with the Advisory board members expertise and authority in healthcare validaеe the team-market fit and
+            ensure the ability to timely execute next steps according to roadmap</p>
+        </div>
+        <div class="team-gallery">
+
+          <div class="row justify-content-center">
+
+            <div class="team-member col-sm-6 col-md-6 col-lg-4">
+              <div class="photo-container">
+                <div class="photo"><img src="./images/team/Makarov.png" alt="alt"></div>
+              </div>
+              <div class="name">Stas Makarov</div>
+              <div class="position">CEO</div>
+              <ul class="achievements list">
+                <li>Engineer researcher, graduated from Bauman University</li>
+                <li>20+ years in IT industry as a programmer, project manager, business analytic</li>
+                <li>Popular IT journalist</li>
+              </ul>
+              <a class="linked-in" href="https://www.linkedin.com/in/stanislav-makarov-6a1426/ ">Linkedin</a>
+            </div>
+
+            <div class="team-member col-sm-6 col-md-6 col-lg-4">
+              <div class="photo-container">
+                <div class="photo"><img src="./images/team/Shmarokvkiy.png" alt="alt"></div>
+              </div>
+              <div class="name">Boris Shmarkovskiy</div>
+              <div class="position">CTO</div>
+              <ul class="achievements list">
+                <li>10+ years as a Head of IT departments at banks</li>
+                <li>20+ years in IT &amp; FinTech</li>
+                <li>Head of IT Development at NIKoil, MENATEP, ROSBANK</li>
+              </ul>
+              <a class="linked-in" href="https://www.linkedin.com/in/boris-shmarkovsky-4312b856/">Linkedin</a>
+            </div>
+
+            <div class="team-member col-sm-6 col-md-6 col-lg-4">
+              <div class="photo-container">
+                <div class="photo"><img src="./images/team/Rokityanskiy.png" alt="alt"></div>
+              </div>
+              <div class="name">Dr. Dmitry Rokityanskiy</div>
+              <div class="position">Business Development Direcror</div>
+              <ul class="list achievements">
+                <li>Founder &amp; CEO of Daclouds -Google partner &amp; investment from 1C</li>
+                <li>8+ years experience in R&amp;D (awards from the US NSF, UK Royal Society )</li>
+                <li>Senior Risk Manager at MMC and RBS ($6B+ M&amp;A and IPO deals)</li>
+                <li>CMO at GlobalLab (arranged $4M VC investment)</li>
+                <li>MBA &amp; PhD in Applied Math</li>
+              </ul>
+              <a class="linked-in" href="https://www.linkedin.com/in/drockit/">Linkedin</a>
+            </div>
+
+            <div class="team-member col-sm-6 col-md-6 col-lg-4">
+              <div class="photo-container">
+                <div class="photo"><img src="./images/team/Pekshev.png" alt="alt"></div>
+              </div>
+              <div class="name">Alexandr Pekshev </div>
+              <div class="position">Advisor</div>
+              <ul class="achievements list">
+                <li>PhD in Technology</li>
+                <li>Laureate of the Government Prize in Science and Technology 2004</li>
+                <li>Full member of the Academy of Medical and Technical Sciences 1994 </li>
+              </ul>
+            </div>
+
+            <div class="team-member col-sm-6 col-md-6 col-lg-4">
+              <div class="photo-container">
+                <div class="photo"><img src="./images/team/Sharapov.png" alt="alt"></div>
+              </div>
+              <div class="name">Nikolay Sharapov</div>
+              <div class="position">Advisor</div>
+              <ul class="achievements list">
+                <li>PhD in Technology</li>
+                <li>Laureate of the Government Prize in Science and Technology 2004</li>
+              </ul>
+            </div>
+
+            <div class="team-member col-sm-6 col-md-6 col-lg-4">
+              <div class="photo-container">
+                <div class="photo"><img src="./images/team/Vagapov.png" alt="alt"></div>
+              </div>
+              <div class="name">Andrey Vagapov</div>
+              <div class="position">Advisor</div>
+              <ul class="achievements list">
+                <li>Research Engineer Bauman Moscow State Technical University</li>
+                <li>Laureate of the Government Prize in Science and Technology 2004</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="form-subscribe">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-sm-12">
+              <div class="form-subscribe-title">
+                <h2>Subscribe to our news</h2>
+                <p>Stay informed. No spam, only important information
+                </p>
+              </div>
+              <form>
+                <input type="text" class="form-control" placeholder="Enter your email…" aria-label="email">
+                <button class="subscribe-btn">subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+
+    <!-- <ul class="main-nav">
+        <li><a class="main-nav-item" href="#platform">Platform</a></li>
+        <li><a class="main-nav-item" href="#devices">Devices</a></li>
+        <li><a class="main-nav-item" href="#pilot-project">Pilot Projects</a></li>
+        <li><a class="main-nav-item" href="#roadmap">Roadmap</a></li>
+        <li><a class="main-nav-item" href="#benefits">Benefits</a></li>
+        <li><a class="main-nav-item" href="#team">Team</a></li>
+      </ul> -->
+
+
+    <section class="subscribe updates">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span><b>Quick Links</b></span>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="footer-quick-links">
+                  <li><a href="#mdignum">MDignum</a></li>
+                  <li><a href="#ecosystem">Ecosystem</a></li>
+                  <li><a href="#platform">Platform Architecture</a></li>
+                  <li><a href="#devices">Devices</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="footer-quick-links">
+                  <li><a href="#pilot-project">Pilot Projects</a></li>
+                  <li><a href="#roadmap">Roadmap</a></li>
+                  <li><a href="#benefits">Benefits</a></li>
+                  <li><a href="#team">Team</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="offset-md-1 col-md-3">
+            <span><b>Devices</b></span>
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="footer-quick-links">
+                  <li><a href="#plason">Plason</a></li>
+                  <li><a href="#diaton">Diaton Digital</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <span><b>Join Us</b></span>
+            <div class="row">
+              <div class="social col-md-9">
+                <a href="#"><img src="./images/icons/ic_fb.svg" alt="icon fb"></a>
+                <a href="#"><img src="./images/icons/ic_inst.svg" alt="icon instagram"></a>
+                <a href="#"><img src="./images/icons/ic_pinterest.svg" alt="icon pinterest"></a>
+                <a href="#"><img src="./images/icons/ic_twitter.svg" alt="icon twitter"></a>
+                <a href="#"><img src="./images/icons/ic_subtract.svg" alt="icon youtube"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="footer-quick-links">
+                  <li><a class="link" href="files/mdblockchain-terms-and-conditions-20190430.pdf">Terms & Conditionss</a></li>
+                  <li><a class="link" href="files/mdblockchain-privacy-policy-20190430.pdf">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="https://use.fontawesome.com/6c947db21b.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/headroom.min.js" type="text/javascript"></script>
+  <script src="js/swiper.jquery.min.js" type="text/javascript"></script>
+  <script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 35 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="95.7828444%" y1="4.21715561%" x2="1.53096782%" y2="98.4690322%" id="linearGradient-1">
+            <stop stop-color="#9EFBD3" offset="0%"></stop>
+            <stop stop-color="#57E9F2" offset="47.8728925%"></stop>
+            <stop stop-color="#45D4FB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Medtech-2" transform="translate(-660.000000, -2936.000000)">
+            <g id="Group-35-Copy" transform="translate(660.000000, 2936.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="60" cy="60" r="60"></circle>
+                <path d="M84.4717676,60.8784725 L47.5566611,81.7917791 C47.1304332,82.037373 46.764431,82.0657107 46.4586596,81.8767922 C46.1528865,81.6878737 46,81.3478197 46,80.8566302 L46,39.1433693 C46,38.6521815 46.1528865,38.3121275 46.4586596,38.123209 C46.764431,37.9342888 47.1304332,37.9626265 47.5566611,38.2082221 L84.4717676,59.1215271 C84.8979955,59.3671227 85.1111111,59.6599466 85.1111111,60.0000006 C85.1111111,60.3400546 84.8979955,60.6328786 84.4717676,60.8784725 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
