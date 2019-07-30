@@ -1,0 +1,126 @@
+.doctor-card {
+  margin-top: 20px;
+  padding: 20px 0px 30px 0px;
+  border-bottom: 3px solid #00BAE6;
+
+  &:last-child {
+    border: none;
+  }
+
+  &-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    // background: -webkit-linear-gradient(225deg, #9EFBD3 0%, #00BAE6 100%);
+    // background: -o-linear-gradient(225deg, #9EFBD3 0%, #00BAE6 100%);
+    // background: linear-gradient(225deg, #9EFBD3 0%, #00BAE6 100%);
+    overflow: hidden;
+    padding: 3px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &-gradient {
+    height: 154px;
+    width: 154px;
+    position: absolute;
+    display: block;
+    background: linear-gradient(197.03deg, #C23B3B 8.79%, #FF6107 69.56%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-photo {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &-name {
+    text-align: center;
+    padding: 8px 0px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+    // border-bottom: 1px solid #00BAE6;
+    // margin-bottom: 16px;
+  }
+
+  &-desc {
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #00BAE6;
+    font-weight: bold;
+  }
+
+  &-text {
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+  }
+
+  &-publications {
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  &-articles {
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  &-link {
+    font-weight: bold;
+    color: #00BAE6;
+    display: initial;
+
+    &:hover {
+      color: #00BAE6;
+    }
+  }
+
+  &-btn {
+    margin-top: 35px;
+    display: inline-block;
+    color: #F5FAFA;
+    background: #00BAE6;
+    border-radius: 36px;
+    border: 2px #00BAE6 solid;
+    font-weight: bold;
+    padding: 9px 24px;
+    transition: all 0.3s;
+
+    // width: 203px;
+    &:hover {
+      text-decoration: none;
+      color: #00BAE6;
+      background: #FFF;
+      // border: 2px #00BAE6 solid;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.grey-bg {
+  background: #F5FAFA;
+  padding: 32px 0 64px 0;
+  margin-bottom: 65px;
+
+  .doctor-card {
+    border-bottom: 3px solid #00BAE6;
+    margin-bottom: 32px;
+  }
+}

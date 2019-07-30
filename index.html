@@ -9,10 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="msapplication-config" content="browserconfig.xml" />
   <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
   <link href="favicons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css?family=Exo+2:600|Open+Sans:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
@@ -24,193 +24,794 @@
 </head>
 
 <body>
-  <header class="headroom">
-    <div class="container-fluid">
-      <div class="row justify-content-around align-items-center">
-        <div class="logo">
-          <a href="/"><img src="./images/logo-top.svg" alt="Medtech Logo"></a>
-        </div>
-        <ul class="main-nav">
-          <li>
-            <a href="#platform">Platform</a>
-          </li>
-          <li>
-            <a href="#devices">Devices</a>
-          </li>
-          <li>
-            <a href="#products">Pilot Projects</a>
-          </li>
-          <li>
-            <a href="#roadmap">Roadmap</a>
-          </li>
-          <li>
-            <a href="#benefits">Benefits</a>
-          </li>
-          <li>
-            <a href="#team">Team</a>
-          </li>
-        </ul>
-        <a class="light-paper top" href="files/25-04-2019-blockchain.pdf" target="_blank" rel="noopener">White paper</a>
-        <!-- <button class="button top-presale =">Buy mEDG tokens</button> -->
-        <div class="button--hamburger">
-          <div class="hamburger top-mobile-nav">
-            <button class="button black hamburger__button js-menu__toggle">
-              <span class="hamburger__label">Open menu</span>
-            </button>
-          </div>
-        </div>
-      </div>
-  </header>
-
   <nav class="menu-mobile">
     <ul class="list menu__list">
       <li class="menu__group">
         <a href="#platform" class="link menu__link">Platform</a>
       </li>
       <li class="menu__group">
-        <a href="#products" class="link menu__link">Devices</a>
+        <a href="#pilot-project" class="link menu__link">Pilot Projects</a>
       </li>
       <li class="menu__group">
-        <a href="#pilot-project" class="link menu__link">Pilot Projects</a>
+        <a href="#team" class="link menu__link">Team</a>
       </li>
       <li class="menu__group">
         <a href="#roadmap" class="link menu__link">Roadmap</a>
       </li>
       <li class="menu__group">
-        <a href="#benefits" class="link menu__link">Benefits</a>
+        <a href="#onboarding" class="link menu__link">Onboarding</a>
       </li>
       <li class="menu__group">
-        <a href="#team" class="link menu__link">Team</a>
+        <a href="#benefits" class="link menu__link">Values</a>
       </li>
+
     </ul>
   </nav>
 
-
-  <div class="modal">
-    <div class="modal-container" id="modal-01">
-      <button class="close"></button>
-      <div class="modal-top">
-        <div class="logo">
-          <img src="./images/md-blockchain-horiz.svg" alt="alt">
+  <div class="modal" id="modal-khanov">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <p class="accent">Note! To receive MDT tokens you should have a Ethereum Wallet</p>
-        <p class="big">Do not send ETH directly from any cryptocurrency exchanges. You need a token compatible ethereum
-          wallet.</p>
-        <p class="message">The following wallets are known to be compatible with Ethereum tokens (ERC-20 standard):</p>
-        <ul class="wallets">
-          <li>
-            <a href="https://www.myetherwallet.com/" target="_blank" rel="noopener">
-              <p>MyEtherWallet </p><span>&nbsp; (no download needed)</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://parity.io/parity.html" target="_blank" rel="noopener">
-              <p>Parity + Ledger </p><span>&nbsp; (Hardware wallet)</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://metamask.io/" target="_blank" rel="noopener">
-              <p>MetaMask </p><span>&nbsp; (Firefox and Chrome browser addon)</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://itunes.apple.com/us/app/imtoken/id1153230571?mt=8" target="_blank" rel="noopener">
-              <p>imToken </p><span>&nbsp; (iPhone)</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/ethereum/mist" target="_blank" rel="noopener">
-              <p>Mist </p><span>&nbsp; (Desktop)</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://parity.io/parity.html" target="_blank" rel="noopener">
-              <p>Parity </p><span>&nbsp; (Desktop)</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://play.google.com/store/apps/details?id=org.consenlabs.token&amp;hl=en" target="_blank"
-              rel="noopener">
-              <p>imToken </p><span>&nbsp; (Android)</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="modal-bottom">
-        <div class="form-check">
-          <div class="check-compatible check">
-            <div class="checkbox">
-              <input id="compatible" type="checkbox">
-              <label for="compatible"></label>
-            </div>My wallet is compatible
-          </div>
-          <div class="check-agreement check">
-            <div class="checkbox">
-              <input id="agreed" type="checkbox">
-              <label for="agreed"></label>
-            </div>I agree with &nbsp;<a href="files/mdblockchain-terms-and-conditions-20190430.pdf" target="_blank"
-              rel="noopener">terms&amp;conditions </a>&nbsp; and &nbsp;<a href="files/mdblockchain-privacy-policy-20190430.pdf"
-              target="_blank" rel="noopener">privacy policy</a>
-          </div>
-        </div>
-        <button class="proceed disabled" disabled id="next">Next</button>
-      </div>
-    </div>
-    <div class="modal-container" id="modal-02">
-      <div class="modal-container">
-        <button class="close"></button>
-        <div class="modal-top">
-          <div class="logo"><img src="./images/md-blockchain-horiz.svg" alt="alt"></div>
-          <p class="send-message">Send ETH to address:</p>
-          <div class="address">0x02d3aea48b443a0026ed9cbc91b97d7335aba323</div>
-          <p class="price">Current price: 1 ETH = 1600 MDBC</p>
-        </div>
-        <div class="modal-bottom">
-          <p class="timing">MBG tokens will be available in your wallet within 1 - 90 mins</p>
-          <button class="proceed" id="done">Done</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="signup-modal">
-    <div class="modal-container">
-      <button class="close"></button>
-      <div class="modal-top">
-        <div class="logo"><img src="./images/md-blockchain-horiz.svg" alt="alt"></div>
-        <div class="section-title"><span>updates</span>
-          <h2>Keep me updated</h2>
-          <p>Stay up to date with the latest Matchpool news, developments, offers, roadmap additions, team updates,
-            investment and crowdfunding campaign.</p>
-        </div>
-        <div class="signup">
-          <input type="email" placeholder="Your E-mail">
-          <button>join</button>
+        <div class="modal-body">
+          <p>Khanov AM. Cancer Prophylaxis: Problem Solving Methods. Creative Surgery and Oncology [Internet]. 2011
+            [cited 2019Jun26];2:21–3.<br />
+            <a href="https://elibrary.ru/item.asp?id=17661401" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>
+            Khanov AM, Kydryashova LN, Zaynullin FD. Evaluation of nutritional status for oncological patients with
+            generalized forms of cancer in the organs of the digestive tract using water sector analysers with AVS-01
+            “MEDASS” software. Creative Surgery and Oncology [Internet]. 2010 [cited 2019Jun26];1:49–52.<br />
+            <a href="https://elibrary.ru/item.asp?id=13085441" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>
+            Nigmatullina KI, Kalimullina DK, Gantsev SK, Bakirov AB, Khanov AM. Quality of life evaluation for chronic
+            lymphocytic leukemia patients with anemia complications. Palliative Medicine and Rehabilitation [Internet].
+            2007 [cited 2019Jun26];:18–21.<br />
+            <a href="https://elibrary.ru/item.asp?id=14984123" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="modal" id="modal-topchiev">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Mikhaylichenko V.Yu., Trofimov P.S., Kchibekov E.A., Samarin S.A., Topchiev M.A. LACTOFERRIN AS AN
+            INDICATOR OF ENDOGENOUS INTOXICATION IN DIFFUSE PERITONITIS. MODERN PROBLEMS OF SCIENCE AND EDUCATION
+            [Internet]. 2018May;:71–.<br />
+            <a href="http://www.science-education.ru/article/view?id=28101" target="_blank"
+              rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Topchiev M.A., Parshin D.S. DIAGNOSTIC BIOMARKER OF AFTER OPERATION PERITONITIS. BULLETIN OF TAMBOV
+            UNIVERSITY SERIES: NATURAL AND TECHNICAL SCIENCES [Internet]. 2013Jan;18(1):294–5.<br />
+            <a href="https://elibrary.ru/item.asp?id=18849027" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Topchiev M.A., Parshin D.S., P'yankov U.P., Topchiev A.M., Chukhnina Yu. G. OХYGENETIC MEDICAL PREPARATIONS
+            AND EXOGENOUS OXIDE NITROGEN IN COM- PLEX TREATMENT OF PURULENT-NECROTIC COMPLICATIONS OF DIABETIC FOOT
+            SYNDROME. TAVRICHESKY MEDICAL AND BIOLOGICAL HERALD. 2018Jan;21(1):148–52.<br />
+            <a href="https://elibrary.ru/item.asp?id=35297406" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="modal" id="modal-melnikov">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Topchiev M.A., Melnikov V.V., Parshin D.S., TARICULIEV SH. M., TOPCHIEV A.M. REGIONAL IMMUNO- AND NO -
+            THERAPY IN COMPEX TREATMENT OF EPITHELIAL COCCYGEAL WAY IN ABSCESS STAGE. KUBAN SCIENTIFIC MEDICAL HERALD
+            [Internet]. 2017Jan;1(162):139–42.<br />
+            <a href="https://elibrary.ru/item.asp?id=29141515" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Yusupov I.A., Melnikov V.V., Astaf'ev V.V. EMERGENCY SURGICAL INTERVENTIONS IN HILOPERITONEUM. BULLETIN OF
+            EXPERIMENTAL AND CLINICAL SURGERY [Internet]. 2009Apr;2(4):330–2.<br />
+            <a href="https://elibrary.ru/item.asp?id=14873241" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Melnikov V.V., Iscanderov Z.M., Abdulaeva Z.Sh., Cazimagomedov A.S. Regeneration of the purulent wound at
+            application nanooxidaised antibacterial mixed-preparations. BULLETIN OF RUSSIAN UNIVERSITY OF FRIENDSHIP OF
+            PEOPLES SERIES: MEDICINE [Internet]. 2009Apr;(4):104–8.<br />
+            <a href="https://elibrary.ru/item.asp?id=12974085" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-parshin">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Topchiev MA, Parshin DS, Pyankov UP, Topchiev AM, Chukhnina YU. Oxygenic pharmaceutical drugs and exogenous
+            nitric oxide in combination therapy for purulent necrotic DFS complications . Tavrichesky Medical and
+            Biological Herald [Internet]. 2018 [cited 2019Jul4];21(1):148–52.<br />
+            <a href="https://elibrary.ru/item.asp?id=35297406" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Akimov VP, Smirnov GA, Gvazaza T, Parshin DS, Nurmagomedov AG. Experience from multi-stage combination
+            treatment of patients with purulent necrotic DFS complications. Astrakhan Medical Journal [Internet]. 2015
+            [cited 2019Jul4];10(2):86-93.<br />
+            <a href="https://elibrary.ru/item.asp?id=23889702" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Topchiev MA, Parshin DS. Diagnostic biomarkers of post-operative peritonitis . Tambov University Bulletin,
+            Natural and Technical Sciences Series [Internet]. 2013 [cited 2019Jul4];18(1):294-295.<br />
+            <a href="https://elibrary.ru/item.asp?id=18849027" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-musailov">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Musailov V.A., Krainyukov P.E., Esipov A.V., Achkasov E.E. Clinical and economic rationale for the use of
+            complex antibacterial lymphatic and nitrogen monoxide therapy for peritonitis caused by diseases and
+            injuries of the upper urinary tract. MILITARY MEDICAL JOURNAL [Internet]. 2019; 340(2):11–7.<br />
+            <a href="https://elibrary.ru/item.asp?id=36937351" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Krainyukov P.E., Esipov A.V., Lazarev A.B, Astakhov T.P. Clinical and economic analysis of the
+            effectiveness of combined lymphotropic and NO-therapy in the treatment of peritonitis. LIMPHA [Internet].
+            2018;6(2):61–2.<br />
+          </p>
+          <p>Musailov V.A., Krainyukov P.E., Esipov A.V., Lazarev A.B., Astakhov T.P. Analysis of "cost minimization" in
+            the treatment of patients with peritonitis caused by diseases and injuries of the upper urinary tract.
+            LIMPHA [Internet]. 2018; 6(2):62–3.<br />
+          </p>
+          <p>Musailov V.A., Krainyukov P.E., Esipov A.V., Lazarev A.B. To the treatment of peritonitis caused by the
+            pathology of the upper parts of the urinary system. MILITARY MEDICAL JOURNAL [Internet]. 2018;
+            339(4):19–24.<br />
+            <a href="http://sc.mil.ru/files/morf/military/archive/V_med_N4.pdf" target="_blank"
+              rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V.A., Krainyukov P.E., Esipov A.V. REVIEW OF 385 CASES OF PERITONITIS CAUSED BY DISEASES AND
+            INJURIES OF THE UPPER URINARY TRACT. INFECTIONS IN SURGERY [Internet]. 2018; 16:13–4.<br />
+            <a href="https://elibrary.ru/item.asp?id=36573886" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Achkasov EE, Esipov AV, Pekshev AV, Musailov VA. Use of an Exogenous Nitric Oxide Generator for Treatment
+            of Peritonitis. Biomedical Engineering. 2018;52(1):64–7. Translated from Meditsinskaya Tekhnika, Vol. 52,
+            No. 1, Jan.-Feb., 2018, pp. 47-50.<br />
+          </p>
+          <p>Musailov V.A., Krainyukov P.E., Esipov AV The use of modern surgical technologies in the treatment of
+            peritonitis. LIMPHA [Internet]. 2017; (4):35.<br />
+          </p>
+          <p>Musailov V.A., Zuev VK, Moskalenko VV. Complex lymphotropic and NO-therapy of purulentinflammatory diseases
+            of soft tissues in the field. Journal of Military Medicine [Internet]. 2017Jun [cited 2019Jun17];
+            338(6):72–3.<br />
+            <a href="https://sc.mil.ru/files/morf/military/archive/N 6.pdf" target="_blank"
+              rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V.A., Moskalenko V. V., Moskalenko V. I., Esipov A.V, Datsuk A.O. Nitrogen monoxide and
+            lymphotropic therapy in the treatment of peritonitis of various etiologies. Collection of articles XXXXIX of
+            the scientific-practical conference of the Branch No. 1 of the Federal State Budgetary Institution “3 CVKG
+            them. A.A. Vishnevskogo Ministry of Defense of Russia [Internet]. 2017; 152-5.<br />
+          </p>
+
+          <p>Vtorenko V.I., Esipov A.V, Boyarintsev V. V., Musailov V.A. LYMPHOGENIC METHODS AND MONOXIDE NITROGEN IN
+            THE TREATMENT OF PERITONITIS. MOSCOW SURGICAL JOURNAL [Internet]. 2016; (6):25–8.<br />
+            <a href="https://elibrary.ru/item.asp?id=28769669" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Esipov A.V, Boyarintsev V. V., Musailov V.A. Evaluation of pain syndrome in peritonitis patients on the
+            background of lymphatic and nitrogen monoxide therapy. Abstracts of the International Forum “Surgeons
+            against terrorism. Surgery is not valid. Mistakes, dangers, complications Almanac of the Institute of
+            Surgery named after. A.V. Vishnevsky [Internet].2016; (2): 85.<br />
+          </p>
+          <p>Esipov A.V., Musailov V.A., Shishlo V.K. Study of the level of histamine in the peritoneal fluid in case of
+            peritonitis. MILITARY MEDICAL JOURNAL [Internet]. 2016; 337(4):58–9.<br />
+            <a href="https://elibrary.ru/item.asp?id=27277461" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V.A., Moskalenko V.I., Zuev V. K., Moskalenko V. V. Plasma surgery and NO-therapy (experience,
+            perspectives, tasks).
+            Collection of articles XXXXVIII of the scientific-practical conference of the Branch No. 1 of the Federal
+            State Budgetary Institution “3 CVKG them. A. A. Vishnevsky Ministry of Defense of Russia. [Internet]. 2016;
+            205–7.<br />
+          </p>
+          <p>Esipov A.V., Musailov V.A., Shishlo V.K., Vtorenko V.I. EFFECT OF EXOGENOUS NITROGEN OXIDE ON PERIPHERAL
+            BLOOD FAGOCYTES DURING PERITONITIS. MOSCOW SURGICAL JOURNAL [Internet]. 2015; (1):5–9.<br />
+            <a href="https://elibrary.ru/item.asp?id=24182764" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V. A., Esipov A.V., Yurgens L. P. Costing and economic effectiveness of devices "plason" and
+            "Lympha-E" in the treatment of peritonitis. NEWSLETTER LYMPHOLOGY [Internet]. 2014; (2):8–13.<br />
+            <a href="https://elibrary.ru/item.asp?id=23873124" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V. A. EVALUATION OF QUALITY OF LIFE IN PATIENTS WITH PERITONITIS AGAINST THE BACKGROUND OF NO- AND
+            LYMPHATIC THERAPY. SURGICAL PRACTICE [Internet]. 2015; (2):26–30.<br />
+            <a href="https://elibrary.ru/item.asp?id=24181178" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V. A. THE MODERN TREATMENT OF PERITONITIS, CAUSED BY DISEASES AND INJURIES OF UPPER URINARY TRACT.
+            2014; (11):13–8.<br />
+            <a href="https://elibrary.ru/item.asp?id=22604306" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Esipov A.V., Musailov V.A., Lisovskiy A. V., Moskalenko V. I. EFFECT OF NITROGEN MONOXIDE WARNING WOUND
+            INFECTION. NEWSLETTER LYMPHOLOGY [Internet]. 2014; (1):4–9.<br />
+            <a href="https://elibrary.ru/item.asp?id=22790682" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V.A., Esipov A.V., Guriev G.S., Shishlo V.K. Nitrogen monoxide in the prevention and treatment of
+            postoperative complications.Proceedings of the 5th Congress of Lympology in Russia. 3rd International
+            Scientific and Practical Conference on Clinical Lymphology "LIFA-2014". [Internet]. 2014; 39–45.br />
+          </p>
+
+          <p>Musailov V.A., Lisovskiy A. V., Moskalenko V. V. NO-TREATMENT AND LYMPHOTROPIC ANTIBIOTIC PREVENTION OF
+            SURGICAL INFECTION. NEWSLETTER LYMPHOLOGY [Internet]. 2013; (4):36–9.<br />
+            <a href="https://elibrary.ru/item.asp?id=21255237" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Results of the use of complex NO- and lymphatic therapy in the treatment of peritonitis. Proceedings of the
+            5th Congress of Lympology in Russia. 3rd International Scientific and Practical Conference on Clinical
+            Lymphology "LIFA-2014". [Internet]. 2014; 72–3.<br />
+          </p>
+          <p>Musailov V.A., Efimenko N.A., Esipov A.V., Moskalenko V.V. The use of plasma surgery in military medicine.
+            Journal of Military Medicine [Internet]. 2014Jun [cited 2019Jun17]; 335(6):34–8.<br />
+            <a href="https://sc.mil.ru/files/morf/military/archive/voen-medN6.pdf" target="_blank"
+              rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Vyrenkov Yu.E., Esipov A.V., Musailov V.A., Moskalenko V.V., Shishlo V.K., Povalyaev A.V. The application
+            of nitrogen oxide in the surgical practice. PHYSIOTHERAPY, BALNEOLOGY AND REHABILITATION [Internet]. 2014;
+            (1):33–40.<br />
+            <a href="https://elibrary.ru/item.asp?id=21187322" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V.A., Lisovskiy A. V., Moskalenko V. V. NO-TREATMENT AND LYMPHOTROPIC ANTIBIOTIC PREVENTION OF
+            SURGICAL INFECTION. NEWSLETTER LYMPHOLOGY [Internet]. 2013; (4):36–9.<br />
+            <a href="https://elibrary.ru/item.asp?id=21255237" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Esipov A.V., Musailov V.A., Moskalenko V.V. EXPERIMENTAL AND CLINICAL ASPECTS OF THE INFLUENCE OF NITROGEN
+            MONOXIDE ON LYMPHATIC SYSTEM AT PYOINFLAMMATORY PROCESSES OF VARIOUS GENESIS. SURGEON [Internet]. 2013;
+            (5):65–70.<br />
+            <a href="https://elibrary.ru/item.asp?id=21113910" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V.A. IMMUNOLOGICAL PATTERN ON THE BACKGROUND OF NO-THERAPY. NEWSLETTER LYMPHOLOGY [Internet].
+            2013; (3):11–2.<br />
+            <a href="https://elibrary.ru/item.asp?id=21014944" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V.A., Moskalenko V.A., Moskalenko V.V. ECONOMIC ANALYSIS OF EFFICIENCY OF COMPLEX LYMPHOTROPIC AND
+            NO-THERAPY. NEWSLETTER LYMPHOLOGY [Internet]. 2013; (3):12–3.<br />
+            <a href="https://elibrary.ru/item.asp?id=21014945" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Musailov V.A., Moskalenko V.A., Moskalenko V.V., Shishlo V.K. Experimental studies of the effect of NO on
+            the wound process. Proceedings of the III Congress of Surgeons of the South of Russia with international
+            participation. Astrakhan: Publishing House of Astrakhan Medical Academy [Internet]. 2013; 146–7.<br />
+          </p>
+          <p>Esipov A.V., Musailov V.A., Moskalenko V.V., Moskalenko V.A., Shishlo V.K. Complex treatment of peritonitis
+            with the use of NO-therapy. Proceedings of the III Congress of Surgeons of the South of Russia with
+            international participation. Astrakhan: Publishing House of Astrakhan Medical Academy [Internet]. 2013;
+            73–4.<br />
+          </p>
+
+          <p>Vyrenkov Yu.E., Esipov A.V., Musailov V.A., Moskalenko V.V., Moskalenko V.A., Shishlo V.K. Experience of
+            using NO-therapy in surgical practice. Collection of articles XXXXIV scientific-practical conference of
+            doctors branch number 1 FGKU "GVKG them. N. N. Burdenko Ministry of Defense of Russia" [Internet]. 2013;
+            93–5.<br />
+          </p>
+          <p>Musailov V.A., Esipov A.V., Koridze A.D., Moskalenko V.V., Volkov A.N., Shishlo V.K. Combined NO- and
+            lymphatic therapy in urological and surgical practice. Collection of articles XXXXIV scientific-practical
+            conference of doctors branch number 1 FGKU "GVKG them. N. N. Burdenko Ministry of Defense of Russia"
+            [Internet]. 2013; 96-9.<br />
+          </p>
+          <p>Musailov V.A., Vtorenko V.I., Esipov A.V, Shishlo V.K. Comprehensive NO- and lymphatic therapy in the
+            treatment of peritonitis of various etiologies. Moscow Surgical Journal. Moscow Surgical Journal [Internet].
+            2012; 28(6):5–20.<br />
+          </p>
+          <p>Musailov V.A., Esipov A.V., Shishlo V.K. Synergism of NO- and lymphatic therapy in abdominal surgery.
+            Treatment of peritonitis and its complications: Materials of the city scientific-practical conference.
+            Volume 227. M.: Institute of ambulance them. N.V. Sklifosovsky [Internet]. 2012; 67-8.<br />
+          </p>
+          <p>Musailov V.A. The study of the microbial composition of peritoneal fluid in the combined lymphatic and
+            NO-therapy of patients with peritonitis caused by diseases and injuries of the urinary tract. Treatment of
+            peritonitis and its complications: Materials of the city scientific-practical conference. Volume 227. M .:
+            Institute of ambulance them. N.V. Sklifosovsky [Internet]. 2012; 70-1.<br />
+          </p>
+          <p>Vyrenkov Yu.E., Esipov A.V., Musailov V.A., Moskalenko V.A. Comprehensive NO- and lymphatic therapy in
+            patients with peritonitis caused by diseases and injuries of the urinary tract. Bulletin of Lymphology
+            [Internet]. 2012; (2):7–9.<br />
+          </p>
+          <p>Musailov V.A., Esipov A.V., Shishlo V.K., Moskalenko V.V. The interaction of NO- and lymphatic therapy in
+            surgical practice. Bulletin of Lymphology [Internet]. 2012; (2):9-11.<br />
+          </p>
+          <p>Musailov V.A., Shishlo V.K., Choi G.K., Codina T.V. The study of the cellular composition of peritoneal
+            fluid in patients with peritonitis caused by diseases and injuries of the urinary tract on the background of
+            complex NO- and lymphatic therapy. Bulletin of Lymphology [Internet]. 2012; (2):13–4.<br />
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-pekshev">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Physicochemical parameters of NO-containing gas flow affect wound healing therapy. An experimental study.
+            European Journal of Pharmaceutical Sciences. 2019 .- Vol. 128 .- С. 193 - 201
+            <a href="https://doi.org/10.1016/j.ejps.2018.11.034" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Study of plasma-chemical NO-containing gas flow for treatment of wounds and inflammatory processes. Nitric
+            Oxide - Biology and Chemistry. 2018 .- Vol. 73 .- С. 74 - 80<br />
+            <a href="https://doi.org/10.1016/j.niox.2017.06.002" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>PEKSHEV A.V., VAGAPOV A.B., SHARAPOV N.A., SHEKHTER A.B., VANIN A.F. STUDY OF PLASMA-CHEMICAL NO-CONTAINING
+            GAS FLOW FOR TREATMENT OF WOUNDS AND INFLAMMATORY PROCESSES. NITRIC OXIDE [Internet]. 2018;73:74–80.<br />
+            <a href="https://elibrary.ru/item.asp?id=35481300" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Achkasov EE, Esipov AV, Pekshev AV, Musailov VA. Use of an Exogenous Nitric Oxide Generator for Treatment
+            of Peritonitis. Biomedical Engineering. 2018;52(1):64–7. Translated from Meditsinskaya Tekhnika, Vol. 52,
+            No. 1, Jan.-Feb., 2018, pp. 47-50.<br />
+          </p>
+          <p>Abramov A.A., Barinov S.M., Pekshev A.V., et al. “TUMORS OF THE ORGANS OF THE HEAD AND NECK: TECHNOLOGIES
+            FOR THE TREATMENT AND REHABILITATION OF PATIENTS: RECONSTRUCTION OF TISSUES.” Clinical Center for
+            Otolaryngology FMBA, 2016, pp. 1–513.
+          </p>
+          <p>Marakhonich L.A., Bordenyuk V.I., Pekshev A.V., Vagapov A.B. “Effective Clinical Use of No-Containing Gas
+            Flow Generated by Air-Plasma in Outpatient Settings.” Hospital Replacement Technologies: Ambulatory
+            Surgery., no. 1-2, 2016, pp. 97–101.<br />
+            <a href="https://elibrary.ru/item.asp?id=25870050" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Vasilets V.N., Shekhter A.B., Guller A.E., Pekshev A.V. AIR PLASMA-GENERATED NITRIC OXIDE IN TREATMENT OF
+            SKIN SCARS AND ARTICULAR MUSCULOSKELETAL DISORDERS: PRELIMINARY REVIEW OF OBSERVATIONS Clinical Plasma
+            Medicine. 2015. Т. 3. № 1. С. 32-39
+          </p>
+          <p>Sharapov N.A., Chukanov V.I., Distanov R.R., Kozlov N.P., Pekshev A.V., Homenko V.A., Vagapov A.B.,
+            Dusalieva R.R. Study of air-plasma chemical reactor for a new medical device. ENGINEERING JOURNAL: SCIENCE
+            AND INNOVATION [Internet]. 2013;10(22):32–.<br />
+            <a href="https://elibrary.ru/item.asp?id=20723562" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+
+          <p>Vagapov A.B. , Geraskin I.S., Kozlov N.P., Pekshev A.V., Sharapov N.A. AIR-PLASMA MEDICAL DEVICES FOR
+            SURGERY AND THERAPY. BULLETIN OF MOSCOW STATE TECHNICAL UNIVERSITY IM NE BAUMANA SERIES: MECHANICAL
+            ENGINEERING [Internet]. 2011;(S3):97–106.<br />
+            <a href="https://elibrary.ru/item.asp?id=26347488" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Gundorova R.A., Shekhter A.B. , Kvasha O.I., Pekshev A.V., Feraizi E. NO-therapy in the treatment of the
+            eyelid wounds. OPHTHALMOSURGERY [Internet]. 2010;(3):28–32.<br />
+            <a href="https://elibrary.ru/item.asp?id=18902983" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Davydov A.I., Lipatov D.V., Kamrukov A.S., Khanin A.G., Pekshev A.V., Chakvetadze L.B., Usacheva O.N. The
+            use of high-intensity optical pulse radiation and exogenic nitrogen monoxide in a complex treatment of
+            patients with purulent adnexitis. GYNECOLOGY, OBSTETRICS AND PERINATOLOGY ISSUES [Internet].
+            2007;6(1):14–7.<br />
+            <a href="https://elibrary.ru/item.asp?id=9532975" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Davydov A.I. Strizhakov A.N., Chakvetadze L., Shekhter A.B., Pekshev A.V., Klindukhov I.A. A
+            clinicomorphological analysis of the effect of new-generation plasmatrones on uterine and ovarian tissues in
+            laparoscopic surgery. GYNECOLOGY, OBSTETRICS AND PERINATOLOGY ISSUES [Internet]. 2007;6(5):5–10.<br />
+            <a href="https://elibrary.ru/item.asp?id=9613489" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Vagapov А.В., Kozlov N.P., Pekshev A.V., Sharapov N.A. Plasma Equipment for Surgery and Therapy:
+            Development, Designing and Wide Application in Medical Practice. BIOMEDICAL RADIO ELECTRONICS [Internet].
+            2007;(6):30–8.<br />
+            <a href="https://elibrary.ru/item.asp?id=9597659" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Reshetov I.V., Pekshev A.V., Matorin O.V., Kravtsov S.A., Polyakov A.P. OPPORTUNITIES FOR THE USE OF
+            AIR-PLASMA FLOWS AT IMPLEMENTATION OF RECONSTRUCTIVE AND PLASTIC OPERATIONS IN LOCAL DISTRIBUTED TUMORS OF
+            THE ORGANS OF THE HEAD AND NECK. Siberian Oncology Journal. 2006;(S1):101–2.
+          </p>
+
+          <p>SHEKHTER A.B., RUDENKO T.G., SEREZHENKOV V.A., VANIN A.F., PEKSHEV A.V. BENEFICIAL EFFECT OF GASEOUS NITRIC
+            OXIDE ON THE HEALING OF SKIN WOUNDS. NITRIC OXIDE [Internet]. 2005;12(4):210–9.<br />
+            <a href="https://elibrary.ru/item.asp?id=13479561" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Shekhter A.B., Serezhenkov V.A., Rudenko T.Y., Pekshev A.V., Vanin A.F. Bulletin of Experimental Biology
+            and Medicine. 2005. Т. 12. С. 210.
+          </p>
+          <p>Davydov A.I., Kuchukhidze S.T., Shekhter A.B., Khanin A.G., Pekshev A.V., Pankratov V.V. Clinical
+            evaluation of intraoperative application of air-plasma flow enriched by nitrogen monoxide in operations on
+            the uterus and adnexa. GYNECOLOGY, OBSTETRICS AND PERINATOLOGY ISSUES [Internet]. 2004;3(4):12–7.<br />
+            <a href="https://elibrary.ru/item.asp?id=9932670" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Zuev V.M., Urazgil'deeva Eh.Kh., Pekshev A.V., Abojants R.K., Shekhter A.B., Rudenko T.G. METHOD FOR
+            TREATING PSEUDOEROSION OF UTERINE CERVIX. Type: patent for invention Patent Number: 2217150 [Internet].
+            2003;<br />
+            <a href="https://elibrary.ru/item.asp?id=37905942" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Chesnokova N.В., Gundorova R.A., Kvasha O.I., Bykov V.P., Davydova N.G., Beznos O.V., Stolyarova E.P.,
+            Kosakyan S.M., Gorbacheva O.A., Shekhter А.В., Pekshev A.V. An experimental substantiation of nitric-oxide
+            containing gas flow in the treatment of eye traumas. BULLETIN OF THE RUSSIAN ACADEMY OF MEDICAL SCIENCES
+            [Internet]. 2003;(5):40–4.<br />
+            <a href="https://elibrary.ru/item.asp?id=17034194" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Chirikova E.G., Shulutko A.M., Shekhter А.В., Pekshev A.V., Mansurova G.Т., Krylov A. Yu. The application
+            of exoge nous nitric oxide in the complex treatment of trophic ulcers of the venous etiology. RUSSIAN
+            MEDICAL JOURNAL [Internet]. 2003;(3):14–.<br />
+            <a href="https://elibrary.ru/item.asp?id=17023646" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Chesnokova, NB, Pekshev, AV, Kuznetsova, T.P. METHOD OF TREATING INFLAMMATORY DISEASES AND DAMAGE TO FRONT
+            EYE SURFACE patent for invention RUS 2178684 07.20.1999<br />
+            <a href="https" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+
+          <p>Vagapov AB, Grachev SV, Kozlov NP, Pekshev AV, Shekhter AB METHOD AND DEVICE FOR FORMING NO-CONTAINING GAS
+            FLOW FOR IMPACT ON THE BIOLOGICAL OBJECT patent for invention RUS 2183474 09.02.2001
+          </p>
+          <p>Kabisov R.K., Kudryavtsev B.P., Pekshev A.V., Sharapov N.A. METHOD OF IMPACT ON BIOLOGICAL TISSUE BY PLASMA
+            FLOW patent for invention RUS 2183480 02.06.1997
+          </p>
+          <p>Kozlov NP, Malikov V.N., Pekshev A.V., Suslov V.I. DEVICE FOR PLASMA EXPOSURE TO THE BIOLOGICAL TISSUE
+            patent for invention RUS 2183946 15.10.1997
+          </p>
+          <p>Chesnokova NB, Pekshev A.V., Davydova N.G., Kvasha OI, Gorbacheva O.A., Kosakyan S.M., Galchin A.A. METHOD
+            OF IMPACT ON MICROCIRCULATION DAMAGES OF FORWARDING Eye Cut patent for invention RUS 2192813 05.03.2001
+          </p>
+          <p>Chesnokova NB, Pekshev A.V., Kvasha OI, Kosakyan S.M., Gorbacheva O.A., Galchin A.A. METHOD OF TREATMENT OF
+            ETHYTELIAL RAS patent for invention RUS 2192814 05.03.2001
+          </p>
+          <p>Davydov A.I., Strizhakov A.N., Pekshev A.V., Kuchukhidze S.T., Klindukhov I.A. Possibilities and Prospects
+            of Plasma Endosurgery with Generation of Nitrogen Monoxide in Operations on the Womb and Uterine Appendages.
+            GYNECOLOGY, OBSTETRICS AND PERINATOLOGY ISSUES [Internet]. 2002;1(2):57–60.<br />
+            <a href="https://elibrary.ru/item.asp?id=9548933" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+
+          <p>Kabisov R.K., Kozlov N.P., Pekshev A.V., Perov Yu.L., Shekhter A. B. METHOD OF TREATMENT AND/OR PROPHYLAXIS
+            OF INVADED SOFT TISSUES OF BODY patent for invention RUS 2174398 04/02/1998
+          </p>
+          <p>Krotovsky G.S., Pekshev A.V., Zudin A.M., Uchkin I.G., Mosesov A.G. THERAPY WITH EXOGENOUS NITROGEN OXIDE -
+            A NEW METHOD FOR STIMULATING HEALING OF TROPHIC SKIN DEFECTS AGAINST A CHRONIC VENOUS BACKGROUND
+            INSUFFICIENCY Thoracic and cardiovascular surgery. 2001. No. 3. P. 37.
+          </p>
+          <p>Pekshev, AV, Shekhter, AB, Starostin, OI Pediatric surgery. 2001. No. 1. P. 37.
+          </p>
+          <p>Khrupkin V.I., Zudilin A.V., Pisarenko L.V., Pekshev A.V., Vaganov A.B. LOCAL APPLICATION OF LOW ENERGY AIR
+            AND ARGON PLASMA IN TREATMENT OF PURULENT RAS AND TROPHIC ULCERS Bulletin of Surgery them. I.I. Grekov.
+            2001. T. 160. № 2. S. 39.
+          </p>
+          <p>PROSPECTS OF DEVELOPMENT OF PLASMA SURGERY IN MILITARY MEDICINE Marakhonich LA, Pekshev A.V., Efimenko
+            N.A., Moskalenko V.I. Military Medical Journal. 2001. No. 4. P. 32.
+          </p>
+          <p>USE OF A NEW BIOLOGICAL FACTOR - EXOGENOUS NITRIC OXIDE - DURING SURGICAL TREATMENT OF PERIODONTITIS
+            Grigor'Ian A.S., Grudianov A.I., Frolova O.A., Antipova Z.P., Erokhin A.I., Shekhter A.B. Dentistry. 2001.
+            T. 80. p. 80.
+          </p>
+
+          <p>Kabisov R.K., Shekhter A.B., Pekshev A.V., Reshetov K.V., Maneilova M.V., Nikolaev A.L., Erokhov S.V.,
+            Menenkov V.D. Russian Oncology Journal. 2000. № 4. S. 16.
+          </p>
+          <p>Kabisov R.K., Sokolov V.V., Shekhter A.B., Pekshev A.V., Maneilova M.V. FIRST EXPERIENCE OF EXOGENOUS
+            NO-THERAPY APPLICATION FOR TREATMENT POSTOPERATIVE RAS and BOOT REACTIONS IN CANCER PATIENTS Russian
+            Oncology Journal. 2000. № 1. P. 24.
+          </p>
+          <p>Reshetov I.V., Kabisov R.K., Shekhter A.B., Pekshev A.V., Maneilova M.V. APPLICATION OF PLAZON AIR-PLASMA
+            MACHINE IN MODES COAGULATION AND NO-THERAPY FOR RECONSTRUCTIVE-PLASTIC OPERATIONS IN CANCER PATIENTS Annals
+            of plastic, reconstructive and aesthetic surgery. 2000. No. 4. S. 24.
+          </p>
+          <p>Shekhter A.B., Kabisov R.K., Pekshev A.V., Kozlov N.P., Perov Y.L. EXPERIMENTAL AND CLINICAL VALIDATION OF
+            PLASMADYNAMIC THERAPY OF WOUNDS WITH NITRIC OXIDE Bulletin of Experimental Biology and Medicine. 1998. Т.
+            126. № 2. С. 829-834.<br />
+            <a href="https://elibrary.ru/item.asp?id=26268584" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Shekhter AB, Kabisov R.K., Pekshev A.V. EXPERIMENTAL AND CLINICAL JUSTIFICATION OF PLASMODYNAMIC THERAPY
+            AND RAS WITH NITROGEN OXIDE Bulletin of experimental biology and medicine. 1998. № 126. S. 392.
+          </p>
+          <p>Khrupkin V.I., Pisarenko L.V., Slostin S.M. USE OF PHYSICAL PLASMA IN SURGERY OF THE RAS AND PRE-EYE
+            COMPLICATIONS Bulletin of Surgery them. I.I. Grekov. 1998. T. 157. No. 2. S. 43.
+          </p>
+
+          <p>Zhilyaev E.G., Khrupky V.I., Marakhonich I.A., Kudryavtsev B.P., Pisarenko I.V., Pekshev A.V., Sleptsov ON.
+            PROSPECTS OF APPLICATION OF AIR PLASMA FLOWS IN MEDICINE Military Medical Journal. 1998. T. 319. p. 46.
+          </p>
+          <p>KOZLOV NP, VAGAPOV AB, MALIKOV VN, SUSLOV V.I., PEXHEV A.V. Investigation of the physical basic of the
+            hight-effective conversion laser irradiation energy into electricity. Research Report No 95-02-05210
+            (Russian Foundation for Basic Research) [Internet]. 1995;<br />
+            <a href="https://elibrary.ru/item.asp?id=222133" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Pekshev A.V. FIRST EXPERIENCE OF EXOGENOUS NO-THERAPY APPLICATION FOR THE TREATMENT OF POSTOPERATIVE RAS
+            AND RADIATIVE REACTIONS IN CANCER PATIENTS Russian Oncology Journal. 1992. № 1. S. 24.
+          </p>
+          <p>Kozlov NP, Pekshev AV, Protasov Yu.S., Suslov V.I. INTERACTION OF LASER RADIATION WITH LOW-TEMPERATURE
+            PLASMA AND THERMOEMISSION ENERGY CONVERSION In the collection: Radiation plasmodynamics. Materials of the
+            All-Union Symposium on radiation plasmodynamics. Edited by Professor of Physics and Mathematics Yu.S.
+            Protasov. 1991. p. 462-498.
+          </p>
+          <p>Kozlov NP, Pekshev AV, Protasov Yu.S., Suslov V.I. THERMOPHYSICAL ASPECTS OF THE PROBLEM OF CREATION OF
+            PLASMA SURGICAL INSTALLATIONS In the collection: Radiation plasmodynamics. Materials of the All-Union
+            Symposium on radiation plasmodynamics. Edited by Professor of Physics and Mathematics Yu.S. Protasov. 1991.
+            p. 498-552.
+          </p>
+          <p>Kudryavtsev B.P., Moskalik V.A., Klepikov S.V., Yarosh V.N., Kiselev E.D., Pekshev A.V. OPPORTUNITIES AND
+            PROSPECTS OF APPLICATION OF PLASMA FLOWS IN SURGERY Military Medical Journal. 1991. № 11. S. 21.
+          </p>
+
+          <p>Shekhter AB, Kabisov R.K., Pekshev A.V. EXPERIMENTAL AND CLINICAL JUSTIFICATION OF PLASMODYNAMIC THERAPY
+            RAS OXIDE NITROGEN Bulletin of experimental biology and medicine. 1990. No. 8. S. 210.
+          </p>
+          <p>Brekhov E.I., Kozlov N.P., Rebizov V.I., Tartynskiǐ S.I., Suslov N.I., Pekeshev A.V., Naidenko M.V.
+            EXPERIMENTAL AND CLINICAL STUDIES AND PROSPECTS OF USING PLASMA FLOWS Surgery. Journal them. N.I. Pirogov.
+            1989. V. 7. S. 94.
+          </p>
+          <p>Kozlov NP, Pekshev AV, Protasov Yu.S., Suslov N.I. NUMERICAL RESEARCH OF THE ELECTRIC ARC IN THE
+            MICROPLASMATRON CHANNEL News of the Siberian Branch of the USSR Academy of Sciences. A series of technical
+            sciences. 1989. № 3. S. 99.
+          </p>
+          <p>Kozlov NB, Protasov Yu.S., Pekshev A.V. RESEARCH AND DEVELOPMENT OF PLASMA DEVICES FOR EXPOSURE TO
+            BIOLOGICAL TISSUES: THE WORKS OF VNIIIMT. 1987. № 4. S. 8.
+          </p>
+          <p>Skobelkin OK, Brekhov E.I., Litvin GD, Tartynsky S.I., Rebizov V.Yu., Eliseenko V.I., Pekshev N.V., Suslov
+            N.I. APPLICATION OF PLASMA INSTALLATIONS IN THE SURGERY OF PARAHIMATIC ORGANS Surgery. Journal them. N.I.
+            Pirogov. 1987. Number 5. S. 75.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-sharapov">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Physicochemical parameters of NO-containing gas flow affect wound healing therapy. An experimental study.
+            European Journal of Pharmaceutical Sciences. 2019 .- Vol. 128 .- С. 193 - 201
+            <a href="https://doi.org/10.1016/j.ejps.2018.11.034" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Study of plasma-chemical NO-containing gas flow for treatment of wounds and inflammatory processes. Nitric
+            Oxide - Biology and Chemistry. 2018 .- Vol. 73 .- С. 74 - 80<br />
+            <a href="https://doi.org/10.1016/j.niox.2017.06.002" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>PEKSHEV A.V., VAGAPOV A.B., SHARAPOV N.A., SHEKHTER A.B., VANIN A.F. STUDY OF PLASMA-CHEMICAL NO-CONTAINING
+            GAS FLOW FOR TREATMENT OF WOUNDS AND INFLAMMATORY PROCESSES. NITRIC OXIDE [Internet]. 2018;73:74–80.<br />
+            <a href="https://elibrary.ru/item.asp?id=35481300" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Sharapov N.A., Khinkis A.V., Gadzhikhalilova S.I., Melnik T.V., Parfenov A.V. STRUCTURE OF PULSE DISCHARGE
+            WITH VARIABLE REPETITION RATE. QUESTIONS OF NUCLEAR SCIENCE AND TECHNOLOGY SERIES: THERMOUADER SYNTHESIS
+            [Internet]. 2017;40(2):61–4.<br />
+            <a href="https://elibrary.ru/item.asp?id=29421671 " target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Sharapov N.A., Chukanov V.I., Distanov R.R., Kozlov N.P., Pekshev A.V., Homenko V.A., Vagapov A.B.,
+            Dusalieva R.R. Study of air-plasma chemical reactor for a new medical device. ENGINEERING JOURNAL: SCIENCE
+            AND INNOVATION [Internet]. 2013;10(22):32–.<br />
+            <a href="https://elibrary.ru/item.asp?id=20723562" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Vagapov A.B. , Geraskin I.S., Kozlov N.P., Pekshev A.V., Sharapov N.A. AIR-PLASMA MEDICAL DEVICES FOR
+            SURGERY AND THERAPY. BULLETIN OF MOSCOW STATE TECHNICAL UNIVERSITY IM NE BAUMANA SERIES: MECHANICAL
+            ENGINEERING [Internet]. 2011;(S3):97–106.<br />
+            <a href="https://elibrary.ru/item.asp?id=26347488" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Vagapov А.В., Kozlov N.P., Pekshev A.V., Sharapov N.A. Plasma Equipment for Surgery and Therapy:
+            Development, Designing and Wide Application in Medical Practice. BIOMEDICAL RADIO ELECTRONICS [Internet].
+            2007;(6):30–8.<br />
+            <a href="https://elibrary.ru/item.asp?id=9597659 " target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Kabisov R.K., Kudryavtsev B.P., Pekshev A.V., Sharapov N.A. METHOD OF IMPACT ON BIOLOGICAL TISSUE BY PLASMA
+            FLOW patent for invention RUS 2183480 02.06.1997<br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-vagapov">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Physicochemical parameters of NO-containing gas flow affect wound healing therapy. An experimental study.
+            European Journal of Pharmaceutical Sciences. 2019 .- Vol. 128 .- С. 193 - 201<br />
+            <a href="https://doi.org/10.1016/j.ejps.2018.11.034" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Study of plasma-chemical NO-containing gas flow for treatment of wounds and inflammatory processes. Nitric
+            Oxide - Biology and Chemistry. 2018 .- Vol. 73 .- С. 74 - 80<br />
+            <a href="https://doi.org/10.1016/j.niox.2017.06.002" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>PEKSHEV A.V., VAGAPOV A.B., SHARAPOV N.A., SHEKHTER A.B., VANIN A.F. STUDY OF PLASMA-CHEMICAL NO-CONTAINING
+            GAS FLOW FOR TREATMENT OF WOUNDS AND INFLAMMATORY PROCESSES. NITRIC OXIDE [Internet]. 2018;73:74–80.<br />
+            <a href="https://elibrary.ru/item.asp?id=35481300" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Marakhonich L.A., Bordenyuk V.I., Pekshev A.V., Vagapov A.B. “Effective Clinical Use of No-Containing Gas
+            Flow Generated by Air-Plasma in Outpatient Settings.” Hospital Replacement Technologies: Ambulatory
+            Surgery., no. 1-2, 2016, pp. 97–101.<br />
+            <a href="https://elibrary.ru/item.asp?id=25870050" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Sharapov N.A., Chukanov V.I., Distanov R.R., Kozlov N.P., Pekshev A.V., Homenko V.A., Vagapov A.B.,
+            Dusalieva R.R. Study of air-plasma chemical reactor for a new medical device. ENGINEERING JOURNAL: SCIENCE
+            AND INNOVATION [Internet]. 2013;10(22):32–.<br />
+            <a href="https://elibrary.ru/item.asp?id=20723562" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Vagapov A.B. , Geraskin I.S., Kozlov N.P., Pekshev A.V., Sharapov N.A. AIR-PLASMA MEDICAL DEVICES FOR
+            SURGERY AND THERAPY. BULLETIN OF MOSCOW STATE TECHNICAL UNIVERSITY IM NE BAUMANA SERIES: MECHANICAL
+            ENGINEERING [Internet]. 2011;(S3):97–106.<br />
+            <a href="https://elibrary.ru/item.asp?id=26347488" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Vagapov А.В., Kozlov N.P., Pekshev A.V., Sharapov N.A. Plasma Equipment for Surgery and Therapy:
+            Development, Designing and Wide Application in Medical Practice. BIOMEDICAL RADIO ELECTRONICS [Internet].
+            2007;(6):30–8. <br />
+            <a href="https://elibrary.ru/item.asp?id=9597659" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Vagapov AB, Grachev SV, Kozlov NP, Pekshev AV, Shekhter AB METHOD AND DEVICE FOR FORMING NO-CONTAINING GAS
+            FLOW FOR IMPACT ON THE BIOLOGICAL OBJECT patent for invention RUS 2183474 09.02.2001<br />
+          </p>
+          <p>KOZLOV NP, VAGAPOV AB, MALIKOV VN, SUSLOV V.I., PEXHEV A.V. Investigation of the physical basic of the
+            hight-effective conversion laser irradiation energy into electricity. Research Report No 95-02-05210
+            (Russian Foundation for Basic Research) [Internet]. 1995;<br />
+            <a href="https://elibrary.ru/item.asp?id=222133" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>ALEKSEEV D.N., VAGAPOV A.B., MARAKHTANOV M.K., PIL'NIKOV A.V., SUSLOV V.I. INVESTIGATION OF THE ION BEAM OF
+            A PLASMA ACCELERATOR WITH AZIMUTHAL DRIFT OF ELECTRONS BY AN OPTICAL METHOD. JOURNAL OF APPLIED SPECTROSCOPY
+            [Internet]. 1992;56(5-6):523–6.<br />
+            <a href="https://elibrary.ru/item.asp?id=30834493" target="_blank" rel="noopener noreferrer">read here</a>
+          </p>
+          <p>Alekseev D.N., Vagapov A.B., Marakhtanov M.K., Pil'nikov A.V., Suslov V.I. RESEARCH OF ION BEAM OF PLASMA
+            ACCELERATOR WITH AZIMUTAL DRIFT OF ELECTRONS BY OPTICAL METHOD. Journal of Applied Spectroscopy.
+            1992;56(5-6):843–.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-soloviev">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Soloviev, V. Fintech Ecosystem and Landscape in Russia // Journal of Reviews on Global Economics. — 2018. —
+            Vol. 7. — Special Issue. — Banking System and Financial Markets of Russia and other Countries: Problems and
+            Prospects. — P. 377—390.<br />
+            <a href="https://www.lifescienceglobal.com/independent-journals/journal-of-reviews-on-global-economics/volume-7/85-abstract/jrge/3414-abstract-fintech-ecosystem-and-landscape-in-russia"
+              target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Soloviev, V. Fintech Ecosystem in Russia // Proceedings of 2018 11th International Conference «Management
+            of Large-Scale System Development», MLSD 2018. — Piscataway, USA: IEEE, 2018. — P. 1—5.<br />
+            <a href="https://ieeexplore.ieee.org/document/8551808" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Elizarov, M., Ivanyuk, V., Soloviev, V., Tsvirkun, A. Identification of high-frequency traders using fuzzy
+            logic methods // Proceedings of 2017 10th International Conference «Management of Large-Scale System
+            Development», MLSD 2017. — Piscataway, USA: IEEE. — 2017. — P. 1-4.<br />
+            <a href="https://ieeexplore.ieee.org/document/8109615" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Radosteva, M., Soloviev, V., Ivanyuk, V., Tsvirkun, A. Use of neural network models in market risk
+            management // Advances in Systems Science and Applications. — 2018. — V. 18. — No. 2. — P. 53—58.<br />
+            <a href="https://ijassa.ipu.ru/index.php/ijassa/article/view/582" target="_blank"
+              rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Volkova, E. S., Gisin, V. B., Solov’ev, V. I. Data mining techniques: Modern approaches to application in
+            credit scoring // Digest Finance. — 2017. — Т. 22. — № 4. — С. 400—412.<br />
+            <a href="https://www.fin-izdat.ru/journal/digest/detail.php?ID=72048" target="_blank"
+              rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Soloviev, V., Iliina, N., Kurochkin, P. Hardware vendors, proprietary and open source software developers
+            and pirates co-opetition // ALIO/INFORMS Joint International Meeting 2010: Program and Abstracts: June 6—9,
+            2010, Buenos Aires, Argentina. — Baltimore, USA: Institute for Operations Research and the Management
+            Sciences. — P. 128.<br />
+          </p>
+          <p>Soloviev, V. I., Iliina, N. A., Kurochkin, P. A. Competition of hardware manufacturers, proprietary and
+            free software developers, and pirates // Generating Innovative Solutions to Recurring Problems in the Global
+            Business Environment: A Multi-, Inter-, and Transdisciplinary Approach to Formulating and Maintaining a
+            Competitive Organizational Edge: Global Business and Technology Association Twelfth Annual International
+            Conference: Readings Book: July 5—9, 2010, Kruger National Park Vicinity, South Africa. — NY., USA: GBATA,
+            2010. — P. 843—850.<br />
+            <a href="http://visoloviev.ru/bookssci/solgbata10.pdf" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Soloviev, V., Iliina, N., Kurochkin, P. Impact of piracy on competition of hardware manufacturers,
+            proprietary and free software developers // 7th International Conference on Computational Management
+            Science: Abstract Book: July 28—31, 2010, Vienna, Austria. — Vienna, Austria: Vienna University, 2010. — P.
+            32—33.<br />
+          </p>
+          <p>Soloviev, V., Iliina, N., Kurochkin, P. Equilibrium in a market of computer hardware, proprietary, free and
+            pirated software // Operations Research 2010: Mastering Complexity: International Conference: Program and
+            Abstracts: September 1—3, 2010, Munich, Germany. — Munich, Germany: Universitaet der Bundeswehr Muenchen,
+            2010. — P. 45.<br />
+          </p>
+          <p>Soloviev, V. I., Kurochkin, P. A., Rendiuk, A. V., Zazuk, A. V. Innovative business models in the media
+            industry// Annales Universitatis Apulensis, Series Oeconomica. — 2010. — V. 12. — № 2. — P. 692—697.<br />
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1744144" target="_blank"
+              rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Soloviev, V. I. Standards competition and cooperation at the computer hardware and software market //
+            Business Strategies and Technological Innovations for Sustainable Development: Creating Global Prosperity
+            for Humanity: Global Business and Technology Association Eleventh International Conference: Readings Book:
+            July 7—11, 2009, Prague, Czech Republic. — NY., USA: GBATA, 2009. — P. 1087—1093.<br />
+            <a href="http://visoloviev.ru/bookssci/solgbata09.pdf" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Soloviev, V. I. Competition of commercial and free software at the growing market // Sustainable
+            Development through Technological Change: The Sixth International Conference on Management of Technological
+            Changes (MTC—2009): Proceedings: September 3—5, 2009, Alexandroupolis, Greece. — Xanthi, Greece: Democritus
+            University of Thrace, 2009. — P. 806—811.<br />
+          </p>
+          <p>Soloviev, V. I. Mathematical modelling of co-opetition at the modern IT market // 2009 International
+            Conference on Management Science and Engineering: 16th Annual Conference Proceedings: September 14—16, 2009,
+            Moscow, Russia. — Piscataway, USA: IEEE, 2009. — P. 1107—1109.<br />
+            <a href="https://ieeexplore.ieee.org/document/5318131" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Soloviev, V. I., Iliina, N. A., Samoyavcheva, M. V. Cournot equilibrium in a model of hardware and software
+            manufacturers' interaction // Annales Universitatis Apulensis, Series Oeconomica. — 2009. — V. 11. — № 1. —
+            P. 43—53.<br />
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1562725" target="_blank"
+              rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Soloviev, V. I. Duopoly of Linux and Microsoft as competing server operating systems // Evolution and
+            Revolution in the Global Knowledge Economy: Enhancing Innovation and Competitiveness Worldwide: Global
+            Business and Technology Association Tenth International Conference: Readings Book: July 8—12, 2008, Madrid,
+            Spain. — NY., USA: GBATA, 2008. — P. 1041—1044.<br />
+            <a href="http://visoloviev.ru/bookssci/solgbata08.pdf" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+          <p>Soloviev, V. I. Mathematical modelling of strategic commitments and piracy in Windows / Linux competition
+            // 2008 International Conference on Management Science and Engineering: 15th Annual Conference Proceedings:
+            September 10—12, 2008, Long Beach, USA. — Piscataway, USA: IEEE, 2008. — P. 10—12.<br />
+            <a href="https://ieeexplore.ieee.org/document/4668886" target="_blank" rel="noopener noreferrer">read
+              here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Welcome-Screen -->
-
   <section class="welcome-screen">
-    <!-- <div id="particles-js"></div> -->
     <div class="container-fluid">
       <div class="welcome-header">
         <div class="logo"><a href="/"><img src="./images/main-logo-white.svg" alt="Medtech Logo"></a></div>
         <ul class="main-nav">
           <li><a class="main-nav-item" href="#platform">Platform</a></li>
-          <li><a class="main-nav-item" href="#devices">Devices</a></li>
+          <li><a class="main-nav-item" href="#partners">Partners</a></li>
           <li><a class="main-nav-item" href="#products">Pilot Projects</a></li>
-          <li><a class="main-nav-item" href="#roadmap">Roadmap</a></li>
-          <li><a class="main-nav-item" href="#benefits">Benefits</a></li>
           <li><a class="main-nav-item" href="#team">Team</a></li>
+          <li><a class="main-nav-item" href="#roadmap">Roadmap</a></li>
+          <li><a class="main-nav-item" href="#onboarding">Onboarding</a></li>
+          <li><a class="main-nav-item" href="#benefits">Values</a></li>
         </ul>
         <div class="selector-lang">
           <ul class="lang-nav">
-            <li><a class="main-nav-item active" href="#">ENG</a></li>
-            <li><a class="main-nav-item" href="#">中文</a></li>
+            <li><a class="main-nav-item active" href="./index.html">EN</a></li>
+            <li><a class="main-nav-item" href="/index.CN.html">中文</a></li>
           </ul>
         </div>
         <div class="button--hamburger">
@@ -222,180 +823,210 @@
         </div>
       </div>
       <div class="welcome-presale" id="mdignum">
-        <!-- <div class="container"> -->
         <div class="row justify-content-center">
-          <div class="col-lg-5 col-md-6 align-self-center">
+          <div class="col-lg-8 col-md-12 align-self-center">
             <div class="welcome-message-presale">
-              <h1 class="welcome-presale-title">MDignum </h1>
-              <p class="welcome-preslale-subtitle">Digital Transformation Platform <br>
-                for Medical Devices</p>
-              <p class="welcome-preslale-description">MDignum brings together fintech, blockchain, and IoT best
-                practices to
-                transform every innovative medical device into a digital one, providing integrated platform for
-                implementing
-                new business models in the healthcare industry, such as MDaaS – Medical Device as a Service
-              </p>
-              <div class="row welcome-presale-buttons">
-                <div class="col-md-6 col-sm-12">
-                  <a class="light-paper" href="files/25-04-2019-blockchain.pdf" target="_blank" rel="noopener">White
-                    paper</a>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <a href="#" class="white-btn">白皮書</a>
-                </div>
-              </div>
-
+              <h1 class="welcome-presale-title">Accessible Healthcare</h1>
             </div>
           </div>
-          <div class="col-lg-7 col-md-6 align-self-center">
-            <img class="welcome-preale-img" src="images/welcome-presale-new-svg.svg" alt="">
+          <div class="col-lg-4 col-md-12 align-self-center text-center">
+            <a class="light-paper" href="./files/MDignum%20White%20Paper%20EN.pdf" target="_blank" rel="noopener">White
+              paper</a>
+            <a class="white-btn" href="./files/MDignum%20White%20Paper%20CN.pdf" target="_blank" rel="noopener">白皮書</a>
           </div>
         </div>
-        <!-- </div> -->
       </div>
-
-      <!-- <div class="hero-buttons">
-          <div class="row">
-            <div class="col-md-12">
-              <a class="light-paper" href="files/25-04-2019-blockchain.pdf" target="_blank" rel="noopener">White
-                paper</a>
-            </div>
-            <div class="col-md-12">
-              <button class="join-presale">Buy mEDG tokens</button>
-            </div>
-          </div>
-        </div> -->
-
     </div>
   </section>
 
   <main>
-    <section class="section-top">
+    <section class="main-description" id="platform">
       <div class="container">
-        <section class="healthcare" id="platform">
-          <div class="section-title">
-            <!-- <span>platform</span> -->
-            <h2>MDignum Platform</h2>
-            <p>MDignum is an ecosystem of solutions that enable healthcare organizations and providers to acquire
-              novel/new-generation treatment and diagnostic devices at no up-front cost. This is achieved by using a
-              Device-as-a-Service model, wherein device operators pay for use, rather than ownership. All devices in the
-              ecosystem thus become income streams for vendors/manufacturers, while sales of new/upgraded devices become
-              frictionless due to lack of risk for customers.
+        <div class="row">
+          <div class="col-lg-11 col-md-12">
+            <p class="main-description-subtitle">THE mDignum vision</p>
+            <p class="main-description-text">Bring new medical technologies to doctors and hospitals without upfront
+              capital investments
             </p>
+            <ul class="main-description-list">
+              <li class="main-description-item">Cure more people</li>
+              <li class="main-description-item">Save more lives</li>
+              <li class="main-description-item">Develop new tech</li>
+              <li class="main-description-item">Repeat</li>
+            </ul>
           </div>
-          <div class="row align-items-center">
-            <div class="col-lg-7 col-md-12">
-              <!-- <img src="images/2.svg" alt=""> -->
-              <a href="images/ecosystem-big.png" data-lightbox="1-big"><img src="images/ecosystem.svg" alt=""></a>
-              <!-- <div class="grid-container">
-                <div class="box">
-                  <span>Device<br />Manufacturer</span>
-                </div>
-                <div class="box">
-                  <span>Regulator</span>
-                </div>
-                <div class="box">
-                  <span>MIS/EHR<br />Provider</span>
-                </div>
-                <div class="box">
-                  <span>Healtchcare<br />Provider</span>
-                </div>
-                <div class="box">
-                  <span>Medical Device</span>
-                </div>
-                <div class="box">
-                  <span>Insurance<br />Company</span>
-                </div>
-                <div class="box">
-                  <span>Doctor</span>
-                </div>
-                <div class="box">
-                  <img src="images/boxes.svg" alt="">
-                </div>
-                <div class="box">
-                  <span>Leasing<br />Company</span>
-                </div>
-                <div class="box">
-                  <span>Patient</span>
-                </div>
-                <div class="box">
-                  <span>Token<br />Holder</span>
-                </div>
-                <div class="box">
-                  <span>Charity<br />Fund</span>
-                </div>
-              </div> -->
-            </div>
-            <div class="healthcare-text col-lg-5 col-md-12" id="ecosystem">
-              <h2>ECOSYSTEM</h2>
-              <p>MDignum ecosystem includes all parties involved in medical device life cycle – from manufacturing
-                trough using for providing healthcare services till final utilization.</p>
-              <p>The platform maintains all kinds of relations between parties:</p>
-              <ul>
-                <li>Distributed multi-party purchase contracts</li>
-                <li>SLA monitoring and fulfilment</li>
-                <li>Medical device and spare part traceability</li>
-                <li>Compliance management</li>
-                <li>MRO contracts and procedures</li>
-                <li>etc.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-5 col-md-12">
-              <div class="healthcare-text">
-                <h2>Platform Architecture</h2>
-                <p>MDignum is a universal platform that will enable the step-by-step creation and development of a
-                  wide-reaching ecosystem of solutions that will encompass all aspects of medical device use in the
-                  healthcare and wellness industries.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-7 col-md-12">
-              <div class="arch-image">
-                <!-- <img src="images/1.svg" alt=""> -->
-                <a href="images/platform-arch-big.png" data-lightbox="1-big"><img src="images/platform-arch.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center align-items-center" id="devices">
-            <div class="devices-title">
-              <h2>Devices on the Platform</h2>
-            </div>
-          </div>
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-6 align-self-center">
-                <div class="arch-image">
-                    <!-- <img src="images/1.svg" alt=""> -->
-                    <a href="images/devices-on-the-platform-big.png" data-lightbox="1-big"><img src="images/devices-on-the-platform.svg" alt=""></a>
-                  </div>
-              <!-- <img src="images/devices-on-the-platform.svg" alt="" class="img-height"> -->
-            </div>
-            <div class="col-md-6">
-              <div class="devices-text">
-                <p class="devices-text-bold">
-                  A wide variety of medical devices are present on the market. Any of them can potentially be
-                  transformed into digitalized devices and connected to the MDignum platform.
-                </p>
-                <p class="devices-text-normal">
-                  • Qualification. At this stage, a pool of candidate devices is formed. One of the key qualifying
-                  criteria is innovation. Specifically, the device needs to perform promising diagnostic or treatment
-                  methods that have already been clinically proven, but have not yet been put into common practice.
-                  <br><br>
-                  • Creating the digital extension. A required engineering stage that involves adapting a standard
-                  digitalization module to a given device model. This may require modifying the device’s construction.
-                  <br><br>
-                  • Platform integration. This stage includes development of cloud services, smart contracts, protocols,
-                  and a mobile app — all of the software required to integrate devices with the platform. <br><br>
-                  • Launch of new business model. This stage includes a set of marketing and legal activities to support
-                  new digital business processes, such as devices sales for tokens or leasing.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </section>
+        </div>
       </div>
+    </section>
+
+    <section class="why">
+      <div class="why-left">
+        <h3 class="why-left-tilda">&Tilde;</h3>
+        <h3 class="why-left-title">Why did we create MDignum?</h3>
+        <p class="why-left-text">
+          We want to develop a healthcare ecosystem that enables professionals to obtain novel treatment and
+          diagnostic devices and software at no up-front cost.
+        </p>
+      </div>
+      <div class="why-right">
+        <h3 class="why-right-tilda">&Tilde;</h3>
+        <h3 class="why-right-title">How does it work?</h3>
+        <p class="why-right-text">
+          MDignum is introducing a Device-as-a-Service (DaaS) model, wherein physicians pay for use of devices rather
+          than ownership. Different business models — subscription, pay-as-you-go, pay-per-use— can be implemented to
+          suit depending on the specific needs of the customer. All devices in the ecosystem serve as income streams for
+          manufacturers, and sales of new or upgraded devices become frictionless.
+        </p>
+      </div>
+    </section>
+
+    <section class="benefit">
+      <div class="container">
+        <h2 class="benefit-title">What’s the Benefit?</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- benefit-1 -->
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 align-self-center">
+                <img class="benefit-img" src="./images/benefit/benefit-1.jpeg" alt="Benefit Image">
+              </div>
+              <div class="col-lg-7 col-md-6 col-sm-6 col-12 align-self-center">
+                <h5 class="benefit-subtitle">Healthcare organizations</h5>
+                <p class="benefit-description">New device acquisition will no longer be budget-constrained, allowing
+                  large hospitals, small clinics and private practitioners alike to upgrade their treatment and
+                  diagnostic capabilities without capital risk.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- benefit-2 -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row justify-content-end">
+              <div class="col-lg-7 col-md-6 col-sm-6 col-12 align-self-center text-lg-right order-last order-md-first">
+                <h5 class="benefit-subtitle">Patients</h5>
+                <p class="benefit-description">Better healthcare outcomes due to faster adoption of novel diagnostic and
+                  treatment methods by providers. Pricing for high-tech medical services becomes simplified, transparent
+                  and hence more affordable.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 align-self-center">
+                <img class="benefit-img" src="./images/benefit/benefit-2.jpg" alt="Benefit Image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- benefit-3 -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 align-self-center">
+                <img class="benefit-img" src="./images/benefit/benefit-3.jpeg" alt="Benefit Image">
+              </div>
+              <div class="col-lg-7 col-md-6 col-sm-6 col-12 align-self-center">
+                <h5 class="benefit-subtitle">Vendors and manufacturers</h5>
+                <p class="benefit-description">Streamlined sales, lowered customer resistance, greater market
+                  penetration. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ecosystem">
+      <h2 class="ecosystem-title">Ecosystem</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+                <div class="ecosystem-block">
+                  <img class="ecosystem-block-icon" src="./images/ecosystem/ecosystem-icon-1.svg" alt="Ecosystem Icon">
+                  <p class="ecosystem-block-title">The MDignum ecosystem includes all parties involved in the life cycle
+                    of a medical device:</p>
+                  <ul class="ecosystem-block-list">
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Manufacturers</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Vendors</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Healthcare providers</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Leasing companies</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Insurance companies</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">MIS / EHR Providers</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Charities and Regulators</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-5 mt-5 align-self-stretch">
+                <div class="ecosystem-block">
+                  <img class="ecosystem-block-icon" src="./images/ecosystem/ecosystem-icon-2.svg" alt="Ecosystem Icon">
+                  <p class="ecosystem-block-title">The platform supports all kinds of relations between parties:</p>
+                  <ul class="ecosystem-block-list">
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Distributed multi-party purchase contracts</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">SLA monitoring and fulfilment</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Medical device and spare part traceability</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Compliance management</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">MRO contracts & procedures</li>
+                    <li class="ecosystem-block-item"><img class="ecosystem-block-item-icon"
+                        src="./images/ecosystem/ecosystem-check.svg">Usage tracking</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients" id="partners">
+      <div class="container">
+        <div class="section-title">
+          <h2>Partners</h2>
+        </div>
+        <ul>
+          <li>
+            <figure><img src="./images/partners/telemedconsultant.png" alt="telemedconsultant">
+              <!-- <h6>telemedconsultant</h6> -->
+            </figure>
+          </li>
+          <li>
+            <figure><img src="./images/partners/feanor.png" alt="feanor">
+              <!-- <h6>feanor</h6> -->
+            </figure>
+          </li>
+          <li>
+            <figure><img src="./images/partners/onkomonitor.png" alt="onkomonitor">
+              <!-- <h6>onkomonitor</h6> -->
+            </figure>
+          </li>
+          <li>
+            <figure><img src="./images/partners/edelweiss.png" alt="edelweiss">
+              <!-- <h6>edelweiss</h6> -->
+            </figure>
+          </li>
+          <li class="wow fadeIn">
+            <figure><img src="./images/partners/onkoprofilaktika.png" alt="onkoprofilaktika">
+              <!-- <h6>onkoprofilaktika</h6> -->
+            </figure>
+          </li>
+          <li class="wow fadeIn">
+            <figure><img src="./images/partners/telemedsoft.png" alt="telemedsoft">
+              <!-- <h6>telemedsoft</h6> -->
+            </figure>
+          </li>
+        </ul>
+      </div>
+      <!-- end container -->
     </section>
 
     <section class="equipment" id="products">
@@ -404,34 +1035,39 @@
           <div class="section-title">
             <h2>Pilot projects</h2>
             <p>Before offering this new business solution to all medical device manufacturers, we will pilot it with
-              two devices from our partners. They have both been proven in clinical practice and have successfully sold
-              in various markets. We are sure that our platform will allow them to benefit a greater number of patients
+              two devices from our partners. They have both passed clinical trials and have successfully sold
+              on markets. Our platform will allow them to benefit a greater number of patients
               all over the world.</p>
           </div>
           <div class="row">
             <div class="equipment-description col-md-6">
-              <span id="plason">PLASON</span>
+              <span id="plason" class="product-title">PLASON</span>
               <h3>The device for <br> nitric oxide therapy</h3>
               <ul class="list">
-                <li>Applied to wide range of pathologies
-                  <span>Wounds, diabetic foot, burns, trophic ulcers, etc.</span>
+                <li>
+                  <p>Applicable to a wide range of pathologies</p>
+                  <span>TISSUE WOUNDS, DIABETIC FOOT, BURNS, TROPHIC ULCERS, ETC.</span>
                 </li>
-                <li>Comfortable and painless for patients
-                  <span>Blowing by warm air enriched with nitric oxide</span>
+                <li>
+                  <p>Comfortable and painless</p>
+                  <span>BLOWS WARM AIR ENRICHED WITH NITRIC OXIDE</span>
                 </li>
-                <li>Clinically evaluated
+                <li>
+                  <p>Clinically evaluated</p>
                   <span>10,000+ patients treated</span>
                 </li>
-                <li>Based on fundamental science
+                <li>
+                  <p>Based on fundamental science</p>
                   <span>Nobel prize 1998</span>
                 </li>
-                <li>Generates nitric oxide from the air
+                <li>
+                  <p>Generates nitric oxide from the air</p>
                   <span>No consumables</span>
                 </li>
-                <li>Approved for use in Europe
-                  <span class="whitespace"><img class="ce" src="../images/CE_Logo.svg" alt="alt"></span></li>
-              </ul><a class="device-pres" href="https://www.dropbox.com/s/bw7cgcqhpf1w3ic/Plason_2609_1.pdf?dl=0"
-                target="_blank" rel="noopener">Find out more</a>
+                <li>
+                  <p>Approved for use in Europe</p>
+                </li>
+              </ul><a class="device-pres" href="./files/plason-5.0.pdf" target="_blank" rel="noopener">Read the PDF</a>
             </div>
             <div class="equipment-image col-md-6 align-self-center">
               <img src="./images/plason.png" alt="alt">
@@ -439,34 +1075,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="equipment-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="left-section col-md-6">
-              <h4>The therapeutic effects <br> of Nitric Oxide <br> treatment</h4>
-              <ul class="list">
-                <li> Normalization of the microcirculation via vasodilation</li>
-                <li> Activation of antioxidant protection</li>
-                <li> Improving the neuronal conduction</li>
-                <li> Regulation of specific and non-specific immunity</li>
-                <li> Regulation of apoptosis and prevention of pathological scarring</li>
-              </ul>
-            </div>
-            <div class="right-section col-md-6">
-              <p>The main advantage of Nitric Oxide therapy unlike most physical and pharmacological factors influence
-                treatment is multifunctional Nitric Oxide to all phases of inflammatory-regenerative process, resulting
-                in
-                high efficiency treatment of various pathologies. </p>
-              <p>Nitric Oxide therapy also allows a direct, local influence on pathological bodies, thus avoiding side
-                effects, such as using nitropreparátov - medicated NO donors.</p>
-              <p>Another advantage of Nitric Oxide therapy is the ability of exogenous Nitric Oxide penetrate not only
-                through the surface of the wound, but also through intact skin and mucous membranes, ie the possibility
-                of
-                non-invasive effect on the deposits and deep neurovascular bundles.</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </section>
 
     <section class="equipment reverse">
@@ -477,31 +1085,875 @@
               <img src="./images/diaton.png" alt="alt">
             </div>
             <div class="equipment-description col-md-6">
-              <span id="diaton">DIATON</span>
+              <span id="diaton" class="product-title">DIATON</span>
               <h3>THE HANDY DEVICE FOR <br> GLAUCOMA SCREENING </h3>
               <ul class="list">
-                <li> Convenient to use both for patients and doctors <span>No contact with the cornea - no risk of
-                    infection or scratching</span></li>
-                <li> Can be used by Primary Care Physicians <span>Early glaucoma diagnostic through mass
+                <li>
+                  <p>Convenient for both patients and doctors</p>
+                  <span>No contact with the cornea - no risk of
+                    infection or scratching</span>
+                </li>
+                <li>
+                  <p>Can be used by Primary Care Physicians </p>
+                  <span>Early glaucoma diagnosis through mass
                     screening</span>
                 </li>
-                <li> Equipped with Bluetooth and IOT sensors <span>Simplified integration with EMR systems and remote
-                    device diagnostic</span></li>
-                <li> Former model has FDA 510(k) approval and CE mark <span>Be easier get approval for new model</span>
+                <li>
+                  <p>Equipped with Bluetooth and IOT sensors</p>
+                  <span>Simplified integration with EMR systems and remote
+                    diagnostic devices</span>
                 </li>
-              </ul><a class="device-pres"
-                href="https://www.dropbox.com/s/5zne8iuc86l5tr9/Diaton%20Digital%20ICO.pdf?dl=0" target="_blank"
-                rel="noopener">Find out more</a>
+                <li>
+                  <p>Former model has FDA 510(k) approval and CE mark </p>
+                  <span>Simplified approval for the new model</span>
+                </li>
+              </ul><a class="device-pres" href="./files/diatone-1.0.pdf" target="_blank" rel="noopener">Read the PDF</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="team" id="team">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <p class="team-description">The members of our core team at MDignum have years of experience working in
+            Fin-Tech. This, cecombined with capable engineers and knowledgeable medical advisory boards, guarantees that
+            we are fit for the market and capable of quick and effective forward development.</p>
+        </div>
+        <div class="row">
+          <!-- SHMARKOVSKIY CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/shmarkovskiy.png" alt="Boris Shmarkovskiy">
+                  </div>
+                  <div class="team-card-name">Boris Shmarkovskiy</div>
+                  <div class="team-card-desc">CEO</div>
+                  <p class="team-card-text">
+                    Mr. Shmarkovskiy has over 30 years of experience in the IT business. He began his career as an
+                    engineer, researcher, and developer of classified instruments for naval reconnaissance and is the
+                    owner of two patents for technical inventions. In 1995 Mr. Shmarkovskiy moved to the IT industry and
+                    has since worked for prominent financial and telecom organizations. He has held the positions of CIO
+                    and CTO at several banks (MENATEP, NIKoil/<a href="https://www.uralsib.ru" class="team-card-link"
+                      target="_blank" rel="noopener noreferrer">Uralsib</a>, <a href="https://www.rosbank.ru"
+                      class="team-card-link" target="_blank" rel="noopener noreferrer">ROSBANK</a>) and has extensive
+                    experience in product management, project management,
+                    and large-scale team operations.
+                    <br /><br />Mr. Shmarkovskiy helps with the development of sophisticated
+                    FinTech software including complex <a href="https://www.diasoft.com/" class="team-card-link"
+                      target="_blank" rel="noopener noreferrer">banking systems</a>, <a
+                      href="https://www.aciworldwide.com/products/base24-eps" class="team-card-link" target="_blank"
+                      rel="noopener noreferrer">payment protocols</a>, <a href="https://www.experianplc.com/"
+                      class="team-card-link" target="_blank" rel="noopener noreferrer">scoring systems</a>,
+                    and <a href="https://www.tezis-doc.ru/" class="team-card-link" target="_blank"
+                      rel="noopener noreferrer">electronic documentation</a>. This work includes both back and
+                    front-end development and includes mobility. Mr. Shmarkovskiy is distinguished by his strong
+                    business development skills and is a committed supporter of blockchain technology and
+                    decentralization.
+                    He has brought his engineering and FinTech expertise to the fields of MedTech and healthcare with
+                    the goal of making healthcare more accessible and effective.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/shmbor/" target="_blank">Linkedin</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- HENRY CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/henry.png" alt="Marcel Henry">
+                  </div>
+                  <div class="team-card-name">Marcel Henry</div>
+                  <div class="team-card-desc">VP Business Development</div>
+                  <p class="team-card-text">
+                    Mr. Marcel Henry is a vastly experienced senior executive with almost three decades of leadership
+                    experience in global technology including pioneering work in the design and development of
+                    Corporate ICT capabilities that support Microsoft’s global expansion. Mr. Henry is a technologist
+                    with a passion for innovation in mobile communications. He was President of CivicConnect EMEA
+                    and Chief Mobility Officer with CivicConnect when the company he founded, In-Trip Travel
+                    Technologies (i3T), merged with CivicConnect.
+                    <br><br>
+                    Prior to that, Mr. Henry worked at a number of high-profile technology firms devising early stage
+                    business development, product strategy, design, product development, and deployment. Starting out in
+                    the National Physical Laboratories in Teddington, UK, he worked on a broad range of projects
+                    including hydrodynamics for British Navy nuclear submarines, aerodynamics for F1 racing cars, and
+                    the design of market leading golf balls. Subsequently, he worked for the Royal Mail leading
+                    their London wide advanced technology support service before commencing a successful career with
+                    Microsoft. With Microsoft, he led teams that designed and deployed communications networks It is the
+                    work of these teams that made the saying “the sun never sets on the Microsoft network” into a
+                    reality. As the first ICT employee outside of Microsoft’s Redmond HQ, Mr. Henry was instrumental in
+                    bringing Microsoft’s widely admired Building 11 (ICT) services to the EMEA region. Later at
+                    Microsoft he led teams in Data Centre Design and Operations and the EMEA Helpdesk, Dublin’s first
+                    Metropolitan Area Network which at the time was the worlds most advanced computer network outside
+                    North America and Japan. After this, Mr. Henry shifted his focus from technology to business and led
+                    the Project Management Group, composed of world-class project managers, in the design and
+                    implementation of critical developer community programs such as MSDN where Email, web, contact
+                    centre operations, product distribution and subscription management work were combined for the first
+                    time, forming the key component of Microsoft’s well regarded developer solutions.
+                    <br><br>
+                    Mr Henry is a qualified Marine Radio Officer and telecommunications engineer and an alumni of the
+                    worldfamous Atlantic College in Dublin. He has also completed course in Microcomputer Technology
+                    sponsored by the Government of Ireland, and made the move from analogue to digital electronics at
+                    the advent of the PC computing revolution.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/marcelhenrycrgi/"
+                      target="_blank">Linkedin</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- ROGERS CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/rogers.png" alt="Luke Rogers">
+                  </div>
+                  <div class="team-card-name">Luke Rogers</div>
+                  <div class="team-card-desc">VP Product Strategy</div>
+                  <p class="team-card-text">
+                    Mr. Rogers day-to-day responsibilities include: Business Development, Product Strategy and
+                    Finance.
+                    <br /><br />
+                    Mr. Rogers graduated from the <a href="https://www.qut.edu.au/" class="team-card-link"
+                      target="_blank" rel="noopener noreferrer">Queensland University of
+                      Technology (Australia)</a> with degrees in Science and Business Management, majoring in
+                    Operations Management and Human Resources.
+                    <br /><br />
+                    Previously, Mr. Rogers held a variety of positions in
+                    the logistics, software, defense and event management industries. He earned a masters degree in
+                    Health Economics from <a href="https://www.upf.edu/" class="team-card-link" target="_blank"
+                      rel="noopener noreferrer">Universitat Pompeu Fabra (Barcelona Business School)</a>.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/lukerogersnlp/" target="_blank"
+                      rel="noopener noreferrer">Linkedin</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- GEOFF CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/geoff.png" alt="Geoff Cable">
+                  </div>
+                  <div class="team-card-name">Geoff Cable</div>
+                  <div class="team-card-desc">VP Marketing</div>
+                  <p class="team-card-text">
+                    Mr. Cable is responsive for MDignum commercial strategy and marketing
+                    activities.
+                    <br /><br />
+                    Previously, Mr. Cable has worked in various roles in the business intelligence
+                    and strategic events industry since 2000.
+                    <br /><br />
+                    Mr. Cable graduated from the <a href="https://sydney.edu.au/" class="team-card-link" target="_blank"
+                      rel="noopener noreferrer">University of Sydney</a>, Australia with a degree in Economics, with
+                    majoring in marketing and economics.
+                    <br /><br />
+                    Mr. Cable has been based in Bratislava, Slovak
+                    Republic since 2004, and has worked and lived in Prague and London.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/geoff-cable-b8b8953/" target="_blank"
+                      rel="noopener noreferrer">Linkedin</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- MUSAILOV CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/musailov.png" alt="Vitaly Musailov">
+                  </div>
+                  <div class="team-card-name">Vitaly Musailov, PhD. MD</div>
+                  <div class="team-card-desc">Chief Medical Director</div>
+                  <p class="team-card-text">
+                    Dr. Musailov has over 20 years of experience performing surgeries. He is a member of The Russian
+                    Society of Surgeons and Russian Society of Endoscopic Surgeons.
+                    <br><br>
+                    From 2006-2007, Dr. Musailov worked with the <a href="https://peacekeeping.un.org/en"
+                      class="team-card-link" target="_blank" rel="noopener noreferrer">United Nations Peacekeeping
+                      Corps.</a> assisting in humanitarian efforts made in Sudan.
+                    <br><br>
+                    Dr. Musailov avidly supports and adopts new developments in medical practices <a
+                      href="https://en.wikipedia.org/wiki/Biological_functions_of_nitric_oxide" class="team-card-link"
+                      target="_blank" rel="noopener noreferrer">including nitric oxide</a>
+                    treatment, plasma surgery and <a href="https://en.wikipedia.org/wiki/Helium–neon_laser"
+                      class="team-card-link" target="_blank" rel="noopener noreferrer">helium-neon laser</a> treatment.
+                    <br><br>
+                    Dr. Musailov’s clinical areas of interest are: laparoscopic surgery, abdominal surgery, and
+                    plastic surgery. He is an acclaimed researcher with 4 monographs and over 120 articles published,
+                    including publications on <a href="https://www.orcid.org/" class="team-card-link" target="_blank"
+                      rel="noopener noreferrer">Orcid.org</a> and <a href="https://www.scopus.com/"
+                      class="team-card-link" target="_blank" rel="noopener noreferrer">Scopus.com</a>.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-musailov">Selected
+                    Publications</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SOLOVIEV CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/soloviev.png" alt="Vladimir Soloviev">
+                  </div>
+                  <div class="team-card-name">Professor Vladimir Soloviev</div>
+                  <div class="team-card-desc">VP Product (AI, ML, IoT)</div>
+                  <p class="team-card-text">
+                    Doctor of Economics and Professor. <a
+                      href="http://astgmu.ru/kafedra-obshhej-xirurgii/rukovoditeli-i-sotrudniki/" class="team-card-link"
+                      target="_blank" rel="noopener noreferrer">Chair of the Department of Data Analysis, Decision
+                      Making and Financial Technology at the Financial University under the Government of the Russian
+                      Federation</a>. Chairman of the <a href="http://www.fa.ru/org/div/uank/dsfu/Pages/505001111.aspx"
+                      class="team-card-link" target="_blank" rel="noopener noreferrer">Dissertation Committee for the
+                      program "Mathematical and Instrumental Methods in Economics"</a>. Graduate of the Computational
+                    Mathematics and Cybernetics Department at Lomonosov Moscow state University, as well as the Moscow
+                    School of Management SKOLKOVO.<br /><br />
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BB%D0%BE%D0%B2%D1%8C%D1%91%D0%B2,_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%98%D0%B3%D0%BE%D1%80%D0%B5%D0%B2%D0%B8%D1%87"
+                      class="team-card-link" target="_blank" rel="noopener noreferrer">Dr. Soloviev</a> is a specialist
+                    in applied machine learning, data processing, internet of things, and economic game theory. He was
+                    fundamental in the academic work behind the economy of the Russian IT market. He has published more
+                    than 200 papers in professional and scientific journals both within Russia and abroad (including
+                    Austria, Germany, Spain, China, USA, and other countries).<br /><br />
+                    Dr. Soloviev is a federally recognized expert in the STEM field. He received the Financial
+                    University Rector's Prize and the Professor B. L. Ovsievich Memorial Prize, as well as the <a
+                      href="http://www.ceeman.org/competitions-awards/ceeman-champion-awards/champions-2016"
+                      class="team-card-link" target="_blank" rel="noopener noreferrer">CEEMAN Champion Award 2016</a>.
+                    He is a four-time
+                    recipient of the Project of the Year Award, which is given by the <a
+                      href="http://www.globalcio.ru/cio-community/10099/" class="team-card-link" target="_blank"
+                      rel="noopener noreferrer">Official Society of Russian IT
+                      Directors, GlobalCIO</a>.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/visoloviev/" target="_blank">Linkedin</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-soloviev">Selected
+                    Publications</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- KURILIN CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/kurilin.png" alt="Ilya Kurilin">
+                  </div>
+                  <div class="team-card-name">Ilya Kurilin</div>
+                  <div class="team-card-desc">CTO</div>
+                  <p class="team-card-text">
+                    15+ years of experience managing mobile and internet projects, founder and CEO of Octopod Ltd
+                    <br><br>
+                    Mr. Kurilin has extensive management experience in the fields of IT, Internet and mobile
+                    technologies, and was part of an entrepreneurial team that launched a mobile TV project which has
+                    since accumulated over 7 million users.
+                    <br><br>
+                    He is passionate about developing affordable mobile operating systems and, expanding existing
+                    approaches to app development, by creating a powerful mobile app development platform for
+                    cross-platform, highly native mobile apps.
+                    <br><br>
+                    Mr. Kurilin specializes in software development, business development, marketing and sales,
+                    community support and technical support.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/ilya-kurilin/" target="_blank">Linkedin</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAKAROV CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/makarov.png" alt="Stanislav Makarov">
+                  </div>
+                  <div class="team-card-name">Stanislav Makarov</div>
+                  <div class="team-card-desc">Chief Analytics Officer</div>
+                  <p class="team-card-text">
+                    Mr. Makarov graduated from the prominent <a href="http://www.bmstu.ru/en/" target="_blank"
+                      class="doctor-card-link" rel="noopener noreferrer">Bauman Moscow State Technical University</a>,
+                    where Plason was developed, with a degree in Engineering and Computer Science. His most recent area
+                    of expertise is IoT and MedTech. Before joining MDignum, Mr. Makarov was a business analyst with
+                    over 20 years of experience in the software industry, focusing on enterprise content management
+                    (ECM) solutions. He has expertise in Document Management (DM), Knowledge Management (KM), Records
+                    Management (RM), Business Process Management (BPM), and Documents Imaging & Capture technologies.
+                    <br /><br />
+                    Mr. Makarov is a specialist in communications, knowledge transfer, analysis of functional
+                    requirements, and system architecture. He is a specialist in communicating between the mediums of
+                    “business language” and “technical language”.
+                    <br /><br />
+                    Mr. Makarov is the author of many publications devoted to artificial intelligence, big data,
+                    business
+                    process management, cloud computing, mobility, blockchain, and MedTech.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/stanislav-makarov-6a1426/"
+                      target="_blank">Linkedin</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <!-- ROKITYANSKIY CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/rokityanskiy.png" alt="Dmitry Rokityanskiy">
+                  </div>
+                  <div class="team-card-name">Dr. Dmitry Rokityanskiy</div>
+                  <div class="team-card-desc">VP Sales</div>
+                  <p class="team-card-text">
+                    Founder & CEO of Daclouds<br />
+                    Google partner & investment from 1C<br />
+                    8+ years experience in R&D (awards from the US NSF, UK Royal Society )<br />
+                    Senior Risk Manager at MMC and RBS ($6B+ M&A and IPO deals)<br />
+                    CMO at GlobalLab (arranged $4M VC investment)<br />
+                    MBA & PhD in Applied Math<br />
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/drockit/" target="_blank"
+                      rel="noopener noreferrer">Linkedin</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MA CARD -->
+          <div class="col-md-6">
+            <div class="team-card">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="team-card-img">
+                    <img class="team-card-photo" src="./images/doctors/ma.png" alt="Anastasia Ma">
+                  </div>
+                  <div class="team-card-name">Anastasia Ma</div>
+                  <div class="team-card-desc">Dev Ops</div>
+                  <p class="team-card-text">
+                    Ms. Ma is a highly skilled DevOps engineer with years of experience in Agile Testing, PostgreSQL,
+                    Bamboo, and Bash, as well as configurations management (Puppet, Ansible, Chef). During our previous
+                    work with Anastasia Ma, our deployment time for critical agile project infrastructure was reduced
+                    from approximately 1 month to only 2 days. Ms. Ma has 5+ years of hands-on experience supporting,
+                    automating, and optimizing mission critical deployments in AWS, leveraging configuration management,
+                    CI/CD, DevOps processes and code deployment using Octopus Deploy and PowerShell.
+                    <br /><br />
+                    Ms. Ma has improved developers’ workflow and helped scalability and speed optimization by building
+                    Docker containers to break monolithic apps down into microservices.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="team-card-publications">
+                    <a class="linked-in" href="https://www.linkedin.com/in/anastasiya-ma-3a237aa3"
+                      target="_blank">Linkedin</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doctors grey-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Engineering Advisors</h2>
+        </div>
+        <!-- PEKSHEV CARD -->
+        <div class="doctor-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="doctor-card-img">
+                <img class="doctor-card-photo" src="./images/doctors/pekshev.png" alt="Aleksandr Pekshev">
+              </div>
+              <div class="doctor-card-name">Aleksandr Pekshev</div>
+              <div class="doctor-card-desc">PhD in Technology</div>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Dr. Pekshev holds a PhD in Technology and is the author of over <a
+                  href="https://elibrary.ru/author_items.asp?authorid=84486" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">100 papers on low-temperature plasma physics and technology.</a>
+                <br /><br />
+                Dr. Pekshev was a <a href="https://rg.ru/2004/02/25/premii-dok.html" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">2003 laureate of the tate Prize of the Russian
+                  Federation in Science and Technology.</a>
+                <br /><br />
+                Dr. Pekshev has been behind numerous inventions used in medical devices that treat patients cold plasma
+                and nitric-
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                oxide. His key product is the Plason plasma scalpel and coagulator, which has been acclaimed by medical
+                professionals in <a href="https://elibrary.ru/item.asp?id=26347488" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">general and inflectional surgery</a>, <a
+                  href="https://elibrary.ru/item.asp?id=37887195" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">ophthalmology</a>, <a href="https://elibrary.ru/item.asp?id=9289918"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">oncology</a>, <a
+                  href="https://elibrary.ru/item.asp?id=32466686" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">gastroenterology</a>, <a href="https://elibrary.ru/item.asp?id=28910622"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">otolaryngology</a>, <a
+                  href="https://elibrary.ru/item.asp?id=23090252" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">traumatology and orthopedy</a>, <a
+                  href="https://elibrary.ru/item.asp?id=37905942" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">gynecology</a>, <a href="https://elibrary.ru/item.asp?id=11755786"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">pulmonology and phthisiatry</a>.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="doctor-card-publications">
+                <h5 class="doctor-card-articles">Publications:</h5>
+                <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-pekshev">Selected
+                  Publications</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHARAPOV CARD -->
+        <div class="doctor-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="doctor-card-img">
+                <img class="doctor-card-photo" src="./images/doctors/sharapov.png" alt="Nikolay Sharapov">
+              </div>
+              <div class="doctor-card-name">Nikolay Sharapov</div>
+              <div class="doctor-card-desc">PhD in Technology</div>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                <a href="http://engjournal.ru/authors/1440.html" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">Dr. Sharapov</a> holds PhD in Technology. He has authored over 50
+                <a href="https://elibrary.ru/author_items.asp?authorid=477907" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">papers on low-temperature plasma physics and technology</a>. Dr. Sharapov
+                was a <a href="https://rg.ru/2004/02/25/premii-dok.html" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">2003 laureate of the State Prize of the Russian Federation in Science and
+                  Technology</a>.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Dr. Sharapov is one of the key developers of the Plason plasma scalpel – coagulator, which has been
+                acclaimed
+                by medical professionals in <a href="https://elibrary.ru/item.asp?id=26347488" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">general and inflectional surgery</a>, <a
+                  href="https://elibrary.ru/item.asp?id=37887195" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">ophthalmology</a>, <a href="https://elibrary.ru/item.asp?id=9289918"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">oncology</a>, <a
+                  href="https://elibrary.ru/item.asp?id=32466686" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">gastroenterology</a>, <a href="https://elibrary.ru/item.asp?id=28910622"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">otolaryngology</a>, <a
+                  href="https://elibrary.ru/item.asp?id=23090252" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">traumatology and orthopedy</a>, <a
+                  href="https://elibrary.ru/item.asp?id=37905942" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">gynecology</a>, <a href="https://elibrary.ru/item.asp?id=11755786"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">pulmonology and phthisiatry</a>.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="doctor-card-publications">
+                <h5 class="doctor-card-articles">Publications:</h5>
+                <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-sharapov">Selected
+                  Publications</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VAGAPOV CARD -->
+        <div class="doctor-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="doctor-card-img">
+                <img class="doctor-card-photo" src="./images/doctors/vagapov.png" alt="Andrey Vagapov">
+              </div>
+              <div class="doctor-card-name">Andrey Vagapov</div>
+              <div class="doctor-card-desc"></div>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Mr. Vagapov has authored over <a href="https://elibrary.ru/author_items.asp?authorid=90824"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">15 papers on low-temperature plasma
+                  physics and technology</a>. He was a <a href="https://rg.ru/2004/02/25/premii-dok.html"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">2003 laureate of the State Prize of
+                  the Russian Federation in Science and Technology</a>.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Mr. Vagapov is one of the key developers of the Plason plasma scalpel and coagulator, which has been
+                acclaimed by medical professionals in <a href="https://elibrary.ru/item.asp?id=26347488" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">general and inflectional surgery</a>, <a
+                  href="https://elibrary.ru/item.asp?id=37887195" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">ophthalmology</a>, <a href="https://elibrary.ru/item.asp?id=9289918"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">oncology</a>, <a
+                  href="https://elibrary.ru/item.asp?id=32466686" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">gastroenterology</a>, <a href="https://elibrary.ru/item.asp?id=28910622"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">otolaryngology</a>, <a
+                  href="https://elibrary.ru/item.asp?id=23090252" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">traumatology and orthopedy</a>, <a
+                  href="https://elibrary.ru/item.asp?id=37905942" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">gynecology</a>, <a href="https://elibrary.ru/item.asp?id=11755786"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">pulmonology and phthisiatry</a>.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="doctor-card-publications">
+                <h5 class="doctor-card-articles">Publications:</h5>
+                <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-vagapov">Selected
+                  Publications</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doctors">
+      <div class="container">
+        <div class="section-title">
+          <h2>Medical Advisors</h2>
+        </div>
+        <!-- KHANOV CARD 1 -->
+        <div class="doctor-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="doctor-card-img">
+                <img class="doctor-card-photo" src="./images/doctors/khanov.png" alt="Ayrat Khanov">
+              </div>
+              <div class="doctor-card-name">Professor Ayrat Khanov, PhD. MD</div>
+              <div class="doctor-card-desc">Oncology</div>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Professor Khanov holds the degree of Doctor of Medical Sciences, is CEO of “Telemedsoft” LLC, and sits
+                on the board of directors for “Alpha Clinic”.
+                <br /><br />
+                In 2001 Professor Khanov founded the world’s first specialized prophylactic clinic for oncological
+                conditions. Since its founding, the clinic has succeeded in improving prophylactic treatments and
+                raising the success rate of <b>early-stage cancer diagnosis to 88%.</b>
+                <br /><br />
+                Professor Khanov co-authored the <a href="https://elibrary.ru/item.asp?id=32256495" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">textbook “Oncology”</a>, as well as an oncological
+                atlas and other educational materials on oncology. He has published <a
+                  href="https://elibrary.ru/item.asp?id=32256495" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">over 150 articles and scientific
+                  papers.</a>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Professor Khanov received the Bashkir Republic State Prize in Science and Technology and is a member
+                of the Presidium of the Russian Physicians’ Society.<br /><br />Professor Khanov has been involved in
+                the development and implementation of telemedicine systems as part of his mission to improve cancer
+                prophylaxis. His work also involves the development of cloud technologies in the field of medicine. He
+                is currently the CEO of “Telemedisoft” LLC.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="doctor-card-publications">
+                <h5 class="doctor-card-articles">Publications:</h5>
+                <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-khanov">Selected
+                  Publications</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOCTOR CARD 2 -->
+        <div class="doctor-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="doctor-card-img">
+                <img class="doctor-card-photo" src="./images/doctors/golubovskiy.png" alt="German Golubovskiy">
+              </div>
+              <div class="doctor-card-name">German Golubovskiy, PhD. MD</div>
+              <div class="doctor-card-desc">Otolaryngology</div>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Dr. Golubovskiy is an otolaryngologist bearing the highest category of medical certification offered in
+                the Russian Federation. He has published over 50 scholarly articles, is the owner of 6 patents, and has
+                presented at numerous professional conferences.<br /><br />Over the course of his career, Dr.
+                Golubovskiy has mastered all accepted otolaryngological examination methods and has performed most types
+                of surgical interventions for ear, nose, and throat conditions in children and adults.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                He has performed 680 operations on children and adults over the past 3 years, implementing
+                state-of-the-art methods with cutting-edge technology, including laser treatments, electrosurgery, cold
+                plasma, endoscopic interventions, and microsurgical interventions.<br /><br />
+                In 2007 he successfully defended his thesis, entitled <a
+                  href="https://dlib.rsl.ru/viewer/01003054756#?page=1" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">"Exogenous nitric oxide in combination therapy for treatment of patients
+                  with inflammatory conditions and damage in the upper respiratory tract".</a>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                It was in this research that exogenous nitric oxide was first used in the treatment of upper respiratory
+                conditions. Dr. Golubovskiy's results, based on the treatment of <b>553 patients</b>, definitively
+                demonstrated the effectiveness of exogenous nitric oxide in the treatment of many inflammatory
+                conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOCTOR CARD 3 -->
+        <div class="doctor-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="doctor-card-img">
+                <img class="doctor-card-photo" src="./images/doctors/topchiev.png" alt="Michael Topchiev">
+              </div>
+              <div class="doctor-card-name">Professor Michael Topchiev, PhD. MD</div>
+              <div class="doctor-card-desc">Surgery</div>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Professor Topichev, PhD is a gastroenterology surgeon bearing the highest category of qualification in
+                the Russian Federation. He has successfully developed new surgical practices in gastroenterology and his
+                surgeries have been noted for their adaptability and innovation.
+                <br /><br />
+                Professor Topichev, bears the status of Distinguished Physician of the in Russian Federation. He has
+                authored <a href="https://elibrary.ru/author_items.asp?authorid=453199" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">120 scholarly articles</a> and is the <b>owner of
+                  11 surgical patents</b>, many of which have been implemented in general surgical practice.
+                <br /><br />
+                Professor Topichev holds a chair at <a
+                  href="http://astgmu.ru/kafedra-obshhej-xirurgii/rukovoditeli-i-sotrudniki/" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">Astrakhan State Medical
+                  University</a>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                and is also Chair of the Educational and Clinical Center for New Technologies.
+                <br /><br />
+                Professor Topichev is a full member of the <a
+                  href="http://www.xn----9sbdbejx7bdduahou3a5d.xn--p1ai/users/19057" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">Russian Society of Surgeons</a> and <a
+                  href="http://www.roeh.ru/index.html" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">Russian Society of Endoscopic Surgeons.</a>
+                <br /><br />
+                He is committed to <a href="http://www.palliamed.ru/news/news_633.html" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">palliative medicine</a> and devoted to improving
+                the quality of life for patients in palliative care.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="doctor-card-publications">
+                <h5 class="doctor-card-articles">Publications:</h5>
+                <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-topchiev">Selected
+                  Publications</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOCTOR CARD -->
+        <div class="doctor-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="doctor-card-img">
+                <img class="doctor-card-photo" src="./images/doctors/melnikov.png" alt="Vladimir Melnikov">
+              </div>
+              <div class="doctor-card-name">Professor Vladimir Melnikov, PhD. MD </div>
+              <div class="doctor-card-desc">Surgery</div>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Professor Melnikov is a surgeon bearing the highest category of qualification issued in the Russian
+                Federation. His professional experience spans 24 years and he is the author of <a
+                  href="https://elibrary.ru/author_items.asp?authorid=830846" target="_blank" class="doctor-card-link"
+                  rel="noopener noreferrer">125 scholarly articles</a> and 7 medical methodology
+                books.
+                <br /><br />
+                Professor Melnikov chairs the Office of General Surgery with postgraduate courses at
+                <a href="http://astgmu.ru/kafedra-obshhej-xirurgii/rukovoditeli-i-sotrudniki/" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">Astrakhan State Medical
+                  University.</a>
+                <br /><br />
+                Professor Melnikov is a full member of the <a
+                  href="http://www.xn----9sbdbejx7bdduahou3a5d.xn--p1ai/users/13491" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">Russian Society of Surgeons</a>, Association of
+                general surgeons of Russia and <a href="http://lymphologist.com" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">Russian Society of Lymphology.</a>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Professor Melnikov conducted his <a
+                  href="https://www.dissercat.com/content/kompleksnoe-lechenie-bolnykh-s-gnoinymi-ranami"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">PhD thesis</a> research on the
+                study of infected wound processes and on the treatment of infected wounds using complex techniques. He
+                has developed unique algorithms for diagnosing the severity of infected wounds, including post-injection
+                purulent-inflammatory complications in patients suffering from opioid addiction.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="doctor-card-publications">
+                <h5 class="doctor-card-articles">Publications:</h5>
+                <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-melnikov">Selected
+                  Publications</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOCTOR CARD -->
+        <div class=" doctor-card">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="doctor-card-img">
+                <img class="doctor-card-photo" src="./images/doctors/parshin.png" alt="Dmitry Parshin">
+              </div>
+              <div class="doctor-card-name">Associate Professor Dmitry Parshin, PhD. MD</div>
+              <div class="doctor-card-desc">Surgery</div>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Dr. Parshin is a surgeon bearing the highest category of qualification issued in the Russian Federation.
+                His professional experience spans 24 years and he is the author of <b>120 scholarly articles and owner
+                  of 5
+                  surgical patents.</b>
+                <br /><br />
+                He bears the office of Associate Professor with postgraduate courses
+                at <a href="http://astgmu.ru/kafedra-obshhej-xirurgii/rukovoditeli-i-sotrudniki/" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">Astrakhan State Medical
+                  University.</a>
+                <br /><br />
+                Dr. Parshin is a full member of <a href="http://www.xn----9sbdbejx7bdduahou3a5d.xn--p1ai/users/11780"
+                  target="_blank" class="doctor-card-link" rel="noopener noreferrer">the Russian
+                  Society of Surgeons</a>, the <a href="http://www.roeh.ru/index.html" target="_blank"
+                  class="doctor-card-link" rel="noopener noreferrer">Russian Society of Endoscopic Surgeons</a>, and
+                Hernia Scholars of Russia.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="doctor-card-text">
+                Dr. Parshin has devoted his career to the treatment of complex medical conditions such as
+                peritonitis, septic wounds, diabetic foot syndrome, and pancreatitis. He utilizes innovative
+                methods for diagnosis and treatment, including endoscopic methods, exogenous NO treatment, and
+                combination methods.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="doctor-card-publications">
+                <h5 class="doctor-card-articles">Publications:</h5>
+                <button class="doctor-card-btn" data-toggle="modal" data-target="#modal-parshin">Selected
+                  Publications</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section class="roadmap white-bg" id="roadmap">
       <div class="container">
         <div class="section-title">
-          <h2>History & Roadmap</h2>
+          <h2>Roadmap</h2>
         </div>
         <div class="timeline-02">
           <img src="./images/new-roadmap.svg" alt="alt">
@@ -509,187 +1961,104 @@
       </div>
     </section>
 
-    <section class="benefits grad-bg" id="benefits">
+    <section class="section-top" id="onboarding">
       <div class="container">
-        <section>
-          <div class="section-title">
-            <h2>Benefits</h2>
+        <section class="healthcare">
+          <div class="row justify-content-center" id="devices">
+            <div class="devices-title col-md-12 text-center">
+              <h2>Onboarding</h2>
+              <p class="devices-text-bold">A wide variety of high-tech medical devices are currently on the market. Any
+                of
+                them can be transformed into digitalized devices and connected to the MDignum platform.</p>
+            </div>
           </div>
-          <div class="row">
-            <div class="option col-sm-6 col-md-6 col-lg-4">
-              <div class="icon-box">
-                <img class="icon" src="images/icons/ic_feature-1.svg" alt="alt">
-              </div>
-              <p>Bringing FinTech into Healthcare. We create and implement new business models based on blockchain and
-                tokenomics principles. This will streamline and clarify finance relations among whole healthcare
-                ecosystem. </p>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-6 align-self-center">
+              <img src="./images/devices-on-the-platform-new.svg" alt="" class="img-height">
             </div>
-            <div class="option col-sm-6 col-md-6 col-lg-4">
-              <div class="icon-box">
-                <img class="icon" src="images/icons/ic_feature-2.svg" alt="alt">
+            <div class="col-md-6">
+              <div class="devices-text">
+                <p class="devices-text-normal">
+                  • Qualification. At this stage, a pool of candidate devices is selected. One of the key qualifying
+                  criteria is innovation. Specifically, the device needs to perform promising diagnostic or treatment
+                  functions that have already passed clinical trials, but have not yet been put into common practice.
+                  <br><br>
+                  • Creating the digital extension. A necessary stage in which engineers adapt a standard digitalization
+                  module to a given device model. This may require modifying the device’s construction.
+                  <br><br>
+                  • Platform integration. This stage includes the development of cloud services, smart contracts,
+                  protocols,
+                  and a mobile app — all of the software required to integrate devices with the platform.
+                  <br><br>
+                  • Launch of new business model. This stage involves the development of marketing and legal materials
+                  to support new digital business processes, such as device sales for tokens or leasing.
+                </p>
               </div>
-              <p>Social responsibility. We believe our projects such as early glaucoma screening (with Diaton) and
-                nitric oxide therapy for wounds healing (with Plason) improve quality of life for hundreds thousand
-                people. </p>
-            </div>
-            <div class="option col-sm-6 col-md-6 col-lg-4">
-              <div class="icon-box">
-                <img class="icon" src="images/icons/ic_feature-3.svg" alt="alt">
-              </div>
-              <p>Holistic engineering approach. Many years of medical hardware design and production plus experience
-                in IoT and digital technologies is the key to success in making innovative devices.</p>
-            </div>
-            <div class="option col-sm-6 col-md-6 col-lg-4">
-              <div class="icon-box">
-                <img class="icon" src="images/icons/ic_feature-4.svg" alt="alt">
-              </div>
-              <p>FDA/CE certification practice. We did it for previous models of our devices and understand how to
-                minimize bureaucratic burden on the way to U.S. and European customers.</p>
-            </div>
-            <div class="option col-sm-6 col-md-6 col-lg-4">
-              <div class="icon-box">
-                <img class="icon" src="images/icons/ic_feature-5.svg" alt="alt">
-              </div>
-              <p>Strong software development skills. Our comprehensive portfolio includes apps for insurance, banking,
-                retail, and other. This cross-industries experience will be in demand for ecosystem integration.</p>
-            </div>
-            <div class="option col-sm-6 col-md-6 col-lg-4">
-              <div class="icon-box">
-                <img class="icon" src="images/icons/ic_feature-6.svg" alt="alt">
-              </div>
-              <p>Focus on innovative products and solutions. It will help to reach great scalability and robust cash
-                flow.</p>
             </div>
           </div>
         </section>
       </div>
     </section>
 
-    <section class="team white-bg" id="team">
+    <section class="benefits grad-bg" id="benefits">
       <div class="container">
-        <div class="section-title">
-          <h2>Team</h2>
-          <p class="team-description">Extended experience of the core MDignum team in fintech and insurance, blockchain
-            technology, combined
-            with the Advisory board members expertise and authority in healthcare validaеe the team-market fit and
-            ensure the ability to timely execute next steps according to roadmap</p>
-        </div>
-        <div class="team-gallery">
-
-          <div class="row justify-content-center">
-
-            <div class="team-member col-sm-6 col-md-6 col-lg-4">
-              <div class="photo-container">
-                <div class="photo"><img src="./images/team/Makarov.png" alt="alt"></div>
+        <section>
+          <div class="section-title">
+            <h2>Values</h2>
+          </div>
+          <div class="row">
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="./images/icons/ic_feature-1.svg" alt="alt">
               </div>
-              <div class="name">Stas Makarov</div>
-              <div class="position">CEO</div>
-              <ul class="achievements list">
-                <li>Engineer researcher, graduated from Bauman University</li>
-                <li>20+ years in IT industry as a programmer, project manager, business analytic</li>
-                <li>Popular IT journalist</li>
-              </ul>
-              <a class="linked-in" href="https://www.linkedin.com/in/stanislav-makarov-6a1426/ ">Linkedin</a>
+              <p>Bringing FinTech into Healthcare. We create and implement new business models based on the principles
+                of blockchain and tokenomics. This will streamline and increase the transparency of financial
+                interactions throughout the entire healthcare ecosystem. </p>
             </div>
-
-            <div class="team-member col-sm-6 col-md-6 col-lg-4">
-              <div class="photo-container">
-                <div class="photo"><img src="./images/team/Shmarokvkiy.png" alt="alt"></div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="./images/icons/ic_feature-2.svg" alt="alt">
               </div>
-              <div class="name">Boris Shmarkovskiy</div>
-              <div class="position">CTO</div>
-              <ul class="achievements list">
-                <li>10+ years as a Head of IT departments at banks</li>
-                <li>20+ years in IT &amp; FinTech</li>
-                <li>Head of IT Development at NIKoil, MENATEP, ROSBANK</li>
-              </ul>
-              <a class="linked-in" href="https://www.linkedin.com/in/boris-shmarkovsky-4312b856/">Linkedin</a>
+              <p>Social responsibility. We believe that our projects, such as simplified early glaucoma screening and
+                nitric
+                oxide therapy for wound healing, will improve the quality of life for millions of people.</p>
             </div>
-
-            <div class="team-member col-sm-6 col-md-6 col-lg-4">
-              <div class="photo-container">
-                <div class="photo"><img src="./images/team/Rokityanskiy.png" alt="alt"></div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="./images/icons/ic_feature-3.svg" alt="alt">
               </div>
-              <div class="name">Dr. Dmitry Rokityanskiy</div>
-              <div class="position">Business Development Direcror</div>
-              <ul class="list achievements">
-                <li>Founder &amp; CEO of Daclouds -Google partner &amp; investment from 1C</li>
-                <li>8+ years experience in R&amp;D (awards from the US NSF, UK Royal Society )</li>
-                <li>Senior Risk Manager at MMC and RBS ($6B+ M&amp;A and IPO deals)</li>
-                <li>CMO at GlobalLab (arranged $4M VC investment)</li>
-                <li>MBA &amp; PhD in Applied Math</li>
-              </ul>
-              <a class="linked-in" href="https://www.linkedin.com/in/drockit/">Linkedin</a>
+              <p>Holistic engineering approach. Many years in medical hardware design and production plus experience in
+                IoT and digital technologies are the key to our success in making innovative devices.
+              </p>
             </div>
-
-            <div class="team-member col-sm-6 col-md-6 col-lg-4">
-              <div class="photo-container">
-                <div class="photo"><img src="./images/team/Pekshev.png" alt="alt"></div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="./images/icons/ic_feature-4.svg" alt="alt">
               </div>
-              <div class="name">Alexandr Pekshev </div>
-              <div class="position">Advisor</div>
-              <ul class="achievements list">
-                <li>PhD in Technology</li>
-                <li>Laureate of the Government Prize in Science and Technology 2004</li>
-                <li>Full member of the Academy of Medical and Technical Sciences 1994 </li>
-              </ul>
+              <p>FDA/CE certification experience. We have gone through the certification process for previous device
+                models and understand how to minimize bureaucratic friction on the way to U.S. and European customers.
+              </p>
             </div>
-
-            <div class="team-member col-sm-6 col-md-6 col-lg-4">
-              <div class="photo-container">
-                <div class="photo"><img src="./images/team/Sharapov.png" alt="alt"></div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="./images/icons/ic_feature-5.svg" alt="alt">
               </div>
-              <div class="name">Nikolay Sharapov</div>
-              <div class="position">Advisor</div>
-              <ul class="achievements list">
-                <li>PhD in Technology</li>
-                <li>Laureate of the Government Prize in Science and Technology 2004</li>
-              </ul>
+              <p>Strong software development. Our comprehensive portfolio includes apps created for insurance, banking,
+                retail, and other industries. This cross-industry experience will be essential for proper ecosystem
+                integration.
+              </p>
             </div>
-
-            <div class="team-member col-sm-6 col-md-6 col-lg-4">
-              <div class="photo-container">
-                <div class="photo"><img src="./images/team/Vagapov.png" alt="alt"></div>
+            <div class="option col-sm-6 col-md-6 col-lg-4">
+              <div class="icon-box">
+                <img class="icon" src="./images/icons/ic_feature-6.svg" alt="alt">
               </div>
-              <div class="name">Andrey Vagapov</div>
-              <div class="position">Advisor</div>
-              <ul class="achievements list">
-                <li>Research Engineer Bauman Moscow State Technical University</li>
-                <li>Laureate of the Government Prize in Science and Technology 2004</li>
-              </ul>
+              <p>Focus on innovative products and solutions. Our focus on innovation promises outstanding scalability
+                and robust cash flow.</p>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-      <!-- <div class="form-subscribe">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 col-sm-12">
-              <div class="form-subscribe-title">
-                <h2>Subscribe to our news</h2>
-                <p>Stay informed. No spam, only important information
-                </p>
-              </div>
-              <form>
-                <input type="text" class="form-control" placeholder="Enter your email…" aria-label="email">
-                <button class="subscribe-btn">subscribe</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </section>
-
-
-    <!-- <ul class="main-nav">
-        <li><a class="main-nav-item" href="#platform">Platform</a></li>
-        <li><a class="main-nav-item" href="#devices">Devices</a></li>
-        <li><a class="main-nav-item" href="#pilot-project">Pilot Projects</a></li>
-        <li><a class="main-nav-item" href="#roadmap">Roadmap</a></li>
-        <li><a class="main-nav-item" href="#benefits">Benefits</a></li>
-        <li><a class="main-nav-item" href="#team">Team</a></li>
-      </ul> -->
-
 
     <section class="subscribe updates">
       <div class="container">
@@ -697,26 +2066,20 @@
           <div class="col-md-4">
             <span><b>Quick Links</b></span>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <ul class="footer-quick-links">
-                  <li><a href="#mdignum">MDignum</a></li>
-                  <li><a href="#ecosystem">Ecosystem</a></li>
-                  <li><a href="#platform">Platform Architecture</a></li>
-                  <li><a href="#devices">Devices</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="footer-quick-links">
-                  <li><a href="#pilot-project">Pilot Projects</a></li>
-                  <li><a href="#roadmap">Roadmap</a></li>
-                  <li><a href="#benefits">Benefits</a></li>
+                  <li><a href="#platform">Platform</a></li>
+                  <li><a href="#partners">Partners</a></li>
                   <li><a href="#team">Team</a></li>
+                  <li><a href="#roadmap">Roadmap</a></li>
+                  <li><a href="#onboarding">Onboarding</a></li>
+                  <li><a href="#benefits">Values</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="offset-md-1 col-md-3">
-            <span><b>Devices</b></span>
+          <div class="col-md-4">
+            <span><b>Pilot Projects</b></span>
             <div class="row">
               <div class="col-md-12">
                 <ul class="footer-quick-links">
@@ -727,21 +2090,28 @@
             </div>
           </div>
           <div class="col-md-4">
-            <span><b>Join Us</b></span>
+            <span><b>Follow Us</b></span>
             <div class="row">
-              <div class="social col-md-9">
-                <a href="#"><img src="./images/icons/ic_fb.svg" alt="icon fb"></a>
-                <a href="#"><img src="./images/icons/ic_inst.svg" alt="icon instagram"></a>
-                <a href="#"><img src="./images/icons/ic_pinterest.svg" alt="icon pinterest"></a>
-                <a href="#"><img src="./images/icons/ic_twitter.svg" alt="icon twitter"></a>
-                <a href="#"><img src="./images/icons/ic_subtract.svg" alt="icon youtube"></a>
+              <div class="social col-lg-10 col-md-12 col-sm-12">
+                <a href="https://t.me/mdignum_chat"><img src="./images/icons/telegram.svg" alt="icon telegram"></a>
+                <!-- <a href="#"><img src="./images/icons/wechat.svg" alt="icon wechat"></a> -->
+                <a href="https://www.facebook.com/mdignum/"><img src="./images/icons/fb.svg" alt="icon facebook"></a>
+                <a href="https://www.instagram.com/mdignum1/"><img src="./images/icons/inst.svg"
+                    alt="icon instagram"></a>
+                <a href="#"><img src="./images/icons/youtube.svg" alt="icon youtube"></a>
+                <a href="https://twitter.com/Mdignum1"><img src="./images/icons/twitter.svg" alt="icon twitter"></a>
+                <a href="https://medium.com/mdignum"><img src="./images/icons/medium.svg" alt="icon medium"></a>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
                 <ul class="footer-quick-links">
-                  <li><a class="link" href="files/mdblockchain-terms-and-conditions-20190430.pdf">Terms & Conditionss</a></li>
-                  <li><a class="link" href="files/mdblockchain-privacy-policy-20190430.pdf">Privacy Policy</a></li>
+                  <li><a class="link" href="mailto:info@mdignum.com">info@mdignum.com</a></li>
+                  <li><a class="link" href="./files/MDignum%20Terms%20&%20Conditions.pdf" target="_blank">Terms &
+                      Conditions</a>
+                  </li>
+                  <li><a class="link" href="./files/MDignum%20Privacy%20Policy.pdf" target="_blank">Privacy Policy</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -750,14 +2120,14 @@
       </div>
     </section>
   </main>
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/lightbox.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/lightbox.js"></script>
   <script src="https://use.fontawesome.com/6c947db21b.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/headroom.min.js" type="text/javascript"></script>
-  <script src="js/swiper.jquery.min.js" type="text/javascript"></script>
-  <script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
-  <script src="js/main.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/headroom.min.js"></script>
+  <script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

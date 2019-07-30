@@ -1,0 +1,274 @@
+@media screen and (max-width: 1346px) {
+  .timeline-02 img {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .welcome-presale-title {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header .light-paper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .light-paper,
+  .white-paper {
+    margin-right: 0px;
+  }
+
+  header {
+    padding: 20px 20px;
+  }
+
+  .headroom li {
+    margin: 0 20px;
+  }
+
+  .headroom .main-nav {
+    width: unset;
+    margin: 0 0;
+  }
+
+  .row.welcome-presale-buttons {
+    margin-right: -60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .welcome-header .selector-lang {
+    display: none;
+  }
+
+  .equipment-bottom h4 {
+    text-align: center;
+  }
+
+  .welcome-screen .welcome-header .main-nav {
+
+    margin: 15px auto auto auto;
+  }
+
+  .welcome-screen .welcome-header {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  header {
+    padding: 20px 0px;
+  }
+
+  .headroom li {
+    margin: 0 10px;
+  }
+
+  .welcome-header .main-nav {
+    margin-left: auto !important;
+    margin-right: 0px !important;
+  }
+
+  .why {
+
+    &-left,
+    &-right {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 779px) {
+
+  .selector-lang {
+    display: none;
+  }
+
+  .welcome-header .main-nav {
+    display: none !important;
+  }
+
+  .welcome-screen .top-mobile-nav {
+    // position: absolute;
+    right: 0px;
+    display: flex;
+  }
+
+  .welcome-screen .welcome-header .logo {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .subscribe.updates {
+    text-align: center;
+  }
+
+  .team-card {
+    &-img {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-name,
+    &-desc {
+      text-align: center;
+    }
+  }
+
+  .equipment-image {
+    order: 2;
+    margin-bottom: 0;
+    margin-top: 75px;
+  }
+
+  .welcome-screen .welcome-header .logo {
+    margin-left: 0px;
+  }
+
+  .welcome-screen .welcome-header .main-nav {
+    margin-left: 200px;
+  }
+
+  .header-buttons {
+    margin: 0 auto;
+  }
+
+  .equipment:not(.reverse) .equipment-description,
+  .equipment.reverse .equipment-image {
+    margin-bottom: 75px;
+  }
+
+  header {
+    padding: 20px 0px;
+  }
+
+  .headroom .main-nav {
+    display: none;
+  }
+
+  .headroom .top-mobile-nav {
+    display: flex;
+  }
+
+  .white-btn {
+    margin: 20px 0px;
+  }
+
+  .benefit .col-lg-12 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .benefit {
+    &-subtitle {
+      margin-top: 30px;
+    }
+  }
+
+  .main-description-text {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .welcome-presale-title {
+    font-size: 56px;
+    line-height: 90px;
+  }
+
+  .light-paper.top {
+    display: none;
+  }
+
+  header .top-presale {
+    display: none;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+
+    li {
+      margin: 10px;
+    }
+  }
+
+  .grid-container {
+    gap: 20px !important;
+  }
+
+  .healthcare .grid-container span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .devices-text {
+    padding: 40px 10px !important;
+  }
+
+  .healthcare {
+    padding: 50px 0px;
+  }
+
+  header .top-presale {
+    display: none;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+
+    li {
+      margin: 10px;
+    }
+  }
+
+  .grid-container {
+    gap: 20px !important;
+  }
+
+  .healthcare .grid-container span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .devices-text {
+    padding: 40px 10px !important;
+  }
+
+  .healthcare {
+    padding: 50px 0px;
+  }
+
+  header .light-paper {
+    display: none;
+  }
+
+  .healthcare-text h2,
+  .healthcare-text p {
+    text-align: center;
+  }
+
+  .healthcare ul {
+    margin-left: 20px;
+  }
+
+  .form-subscribe {
+    input {
+      height: 60px !important;
+    }
+
+    .subscribe-btn {
+      height: 60px !important;
+      width: 140px !important;
+      font-size: 18px !important;
+      line-height: 24px !important;
+    }
+  }
+}
